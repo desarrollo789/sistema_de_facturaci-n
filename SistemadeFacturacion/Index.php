@@ -40,50 +40,37 @@
     
        
 <div class="container">
-    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    
-                    <h4 class="modal-title" id="myModalLabel">Esto es un modal</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Texto del modal
-                </div>
-            </div>
-        </div>
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">        
         <!-- Modal ini -->
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Tabs Titles -->
-                <div class="modal-header">            
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- Icon -->
-                <div class="fadeIn first" id = logo>            
+        <div class="modal-dialog" role="document">
+            <div class="wrapper fadeInDown">
+                <div id="formContent" class="modal-content">
+                    <!-- Tabs Titles -->
+                    <div class="modal-header">            
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Icon -->
+                    <div class="fadeIn first" id = logo>            
                         <div class="btn-group">
                             <button type="button" class="btn btn-default">
                                 <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
                             </button>     
                         </div>                                                                       
-                </div>
-                <!-- Login Form -->
-                <form>
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                    <input type="submit" class="fadeIn fourth" value="Log In">
-                </form>
+                    </div>
+                    <!-- Login Form -->
+                    <form>
+                        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                        <input type="submit" class="fadeIn fourth" value="Log In">
+                    </form>
 
-                <!-- Remind Passowrd -->
-                <div id="formFooter">
-                    <a class="underlineHover" href="#">Forgot Password?</a>
+                    <!-- Remind Passowrd -->
+                    <div id="formFooter">
+                        <a class="underlineHover" href="#">Forgot Password?</a>
+                    </div>
                 </div>
-
             </div>
         </div>
         <!-- Modal end -->
