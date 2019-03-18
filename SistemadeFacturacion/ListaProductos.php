@@ -130,42 +130,101 @@
 
         <center>
         <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px">
-        	<table class="tablaCate">
-        		<tr >
-        			<td class="listCate">
-			        	<div class="card" style="width: 18rem;">
-							<img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
-							<ul class="list-group list-group-flush">
-							  	<center>
-							  	<li class="list-group-item"><a href="ListaProductos.php" class="btn btn-primary">Escolares</a></li>
-							  	</center>
-							</ul>
-						</div>  
-        			</td>
+            <table class="tablaCate">
+                <tr >
+                    <td class="listCate2">
+                        <div class="card mb-3" style="max-width: 540px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-4">
+                              <img src="img/mekaku.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Lapiceros</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li>Nombre: <label>Marcador de agua</label></li>
+                                    <li>Color: <label>Negro</label></li>
+                                    <li>Marca: <label>Faber Castell</label></li>
+                                    <li>Precio: <label>5</label> Bs</li>
+                                    <li>Stock: <label>50</label></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                    </td>
 
-        			<td class="listCate">
-			        	<div class="card" style="width: 18rem;">
-							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-							 <ul class="list-group list-group-flush">
-							 	<center>
-							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
-							 	</center>
-							 </ul>
-						</div>
-        			</td>
-        		</tr>
-        	</table>
+                    <td class="listCate2">
+                        <div class="card mb-3" style="max-width: 540px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-4">
+                              <img src="img/lapiceros.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Lapiceros</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li>Nombre: <label>Lapiz</label></li>
+                                    <li>Color: <label>Negro</label></li>
+                                    <li>Marca: <label>Faber Castell</label></li>
+                                    <li>Precio: <label>5</label> Bs</li>
+                                    <li>Stock: <label>50</label></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                    </td>
+
+                    <td class="listCate2">
+                        <div class="card mb-3" style="max-width: 540px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-4">
+                              <img src="img/mekaku.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Lapiceros</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li>Nombre: <label>Lapiz</label></li>
+                                    <li>Color: <label>Negro</label></li>
+                                    <li>Marca: <label>Faber Castell</label></li>
+                                    <li>Precio: <label>5</label> Bs</li>
+                                    <li>Stock: <label>50</label></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                    </td>
+
+                    <td class="listCate2">
+                        <div class="card mb-3" style="max-width: 540px;">
+                          <div class="row no-gutters">
+                            <div class="col-md-4">
+                              <img src="img/mekaku.jpg" class="card-img">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Lapiceros</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li>Nombre: <label>Lapiz</label></li>
+                                    <li>Color: <label>Negro</label></li>
+                                    <li>Marca: <label>Faber Castell</label></li>
+                                    <li>Precio: <label>5</label> Bs</li>
+                                    <li>Stock: <label>50</label></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                    </td>
+                </tr>
+            </table>
         </div>
         </center>
         <!--<div class="overlay"></div>-->
 </div>
-
-   
-
-
-
-
-
 
      <!-- jQuery CDN - Slim version (=without AJAX) -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
