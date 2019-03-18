@@ -1,0 +1,10 @@
+.contenedor{
+	border: solid;
+	border-color: red;
+	padding-left: 520px;
+	padding-top: 150px;
+	padding-bottom: 400px;
+}
+.parrafo{
+	text-align: justify;
+}
