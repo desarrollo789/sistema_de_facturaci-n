@@ -86,28 +86,56 @@
     <div class="wrapper">
         <!-- Sidebar -->
         <nav id="sidebar">
-    
             <div id="dismiss">
                 <i class="fas fa-arrow-left"></i>
             </div>
-    
             <div class="sidebar-header">
-                <h3>Administrador de Inventario</h3>
+                <h3>Bootstrap Sidebar</h3>
             </div>
-    
+
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
                 <li class="active">
-                    <a href="Index.php">Inicio</a>
+                    <a href="Index.php">
+                        <i class="fas fa-home"></i>
+                        Perfil
+                    </a>
                 </li>
                 <li>
-                    <a href="ListaCategorias.php">Categorias</a>
+                    <a href="ListaCategorias.php">
+                        <i class="fas fa-briefcase"></i>
+                        Categorias
+                    </a>
+                    <a href="#pageSubmenu">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Portafolio</a>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Contactos</a>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
                 </li>
             </ul>
         </nav>
