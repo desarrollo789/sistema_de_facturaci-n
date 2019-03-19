@@ -65,7 +65,7 @@
                         </div>                                                                       
                 </div>
                 <!-- Login Form -->
-                <form>
+                <form action="AdminCategorias.php">
                     <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
                     <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
                     <input type="submit" class="fadeIn fourth" value="Log In">
@@ -105,28 +105,6 @@
                         <i class="fas fa-briefcase"></i>
                         Categorias
                     </a>
-                    <a href="#pageSubmenu">
-                        <i class="fas fa-copy"></i>
-                        Pages
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question"></i>
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact
-                    </a>
                 </li>
             </ul>
 
@@ -149,8 +127,8 @@
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
                     </button>
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">
-                        Abrir modal
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#miModal">
+                        <span>Usuario</span>
                     </button>
                 </div>
             </nav>

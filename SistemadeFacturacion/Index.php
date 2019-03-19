@@ -102,28 +102,6 @@
                         <i class="fas fa-briefcase"></i>
                         Categorias
                     </a>
-                    <a href="#pageSubmenu">
-                        <i class="fas fa-copy"></i>
-                        Pages
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question"></i>
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact
-                    </a>
                 </li>
             </ul>
 
