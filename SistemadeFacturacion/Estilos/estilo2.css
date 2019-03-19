@@ -1,11 +1,16 @@
 .parrafo{
 	text-align: justify;
 }
-
+/*----------------------- lista de productos ---------------------*/
 .listCate{
+	margin-right: 2.5%;
+	display: inline-flex;
+	margin-top: 20px;
+}
+.listCate1{
 	padding-left: 15px;
 	padding-right: 15px;
-	display: inline-block;
+	display: inline-flex;
 	margin-top: 20px;
 }
 .listCate2{
@@ -17,8 +22,34 @@
 li{
 	list-style: none;
 }
+/*-----------------------------------------------------------------*/
 .card-img{
 	margin-top: 10%;
 	margin-bottom: 10%;
-	margin-left: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
+
+.opciones{
+	position: absolute;
+	max-width: 350px;
+	max-height: 200px;
+}
+.opciones2{
+	position: absolute;
+}
+/*
+#cardnew{
+	background-color: #A4A4A4;
+}
+#cardnew:hover{
+}
+#imgnew{
+	padding: 50px 50px;
+	transition: 0.5s;
+}
+#imgnew:hover{
+	padding: 35px 35px;
+	transition: 0.5s;
+}
+*/

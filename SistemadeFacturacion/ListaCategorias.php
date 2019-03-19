@@ -129,10 +129,10 @@
         </div>
 
         <center>
-        <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px">
+        <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px; position: static;">
         	<table class="tablaCate">
         		<tr >
-        			<td class="listCate">
+        			<td class="listCate1">
 			        	<div class="card" style="width: 18rem;">
 							<img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
 							<ul class="list-group list-group-flush">
@@ -143,7 +143,37 @@
 						</div>  
         			</td>
 
-        			<td class="listCate">
+        			<td class="listCate1">
+			        	<div class="card" style="width: 18rem;">
+							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
+							 <ul class="list-group list-group-flush">
+							 	<center>
+							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+							 	</center>
+							 </ul>
+						</div>
+        			</td>
+        			<td class="listCate1">
+			        	<div class="card" style="width: 18rem;">
+							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
+							 <ul class="list-group list-group-flush">
+							 	<center>
+							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+							 	</center>
+							 </ul>
+						</div>
+        			</td>
+        			<td class="listCate1">
+			        	<div class="card" style="width: 18rem;">
+							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
+							 <ul class="list-group list-group-flush">
+							 	<center>
+							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+							 	</center>
+							 </ul>
+						</div>
+        			</td>
+        			<td class="listCate1">
 			        	<div class="card" style="width: 18rem;">
 							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
 							 <ul class="list-group list-group-flush">
