@@ -14,7 +14,27 @@ if( $conn ) {
 }
 ?>
 
-     <?php  
+     <?php
+          class Conexion extends MSS
+          {
+               public function __construct() {
+                    $connectionTimeoutSeconds = 30;  // Default of 15 seconds is too short over the Internet, sometimes.  
+                    $maxCountTriesConnectAndQuery = 3;  // You can adjust the various retry count values.  
+                    $secondsBetweenRetries = 4;  // Simple retry strategy.  
+                    $errNo = 0;  
+                    $serverName = "DESKTOP-ISJ34KL\PRUEBAS"; 
+                    $connectionOptions = array( "Database"=>"facturacion");
+                    $conn = null;  
+                    parent::__construct('localhost','root','','maskayplacedatabase');
+                    $this->connect_errno ? die('ERROR: Conexion a la base de datos fallida') : null; 
+               }
+               public function sentrequest($x) {
+                    $serverName = "DESKTOP-ISJ34KL\PRUEBAS";
+                    $result = mssql_query( $x );
+                    return $result;
+               }                 
+          }  
+          
           // Variables to tune the retry logic.    
           $connectionTimeoutSeconds = 30;  // Default of 15 seconds is too short over the Internet, sometimes.  
           $maxCountTriesConnectAndQuery = 3;  // You can adjust the various retry count values.  
