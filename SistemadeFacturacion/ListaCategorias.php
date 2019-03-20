@@ -65,7 +65,7 @@
                         </div>                                                                       
                 </div>
                 <!-- Login Form -->
-                <form>
+                <form action="AdminCategorias.php">
                     <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
                     <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
                     <input type="submit" class="fadeIn fourth" value="Log In">
@@ -86,28 +86,34 @@
     <div class="wrapper">
         <!-- Sidebar -->
         <nav id="sidebar">
-    
             <div id="dismiss">
                 <i class="fas fa-arrow-left"></i>
             </div>
-    
             <div class="sidebar-header">
-                <h3>Administrador de Inventario</h3>
+                <h3>Bootstrap Sidebar</h3>
             </div>
-    
+
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
                 <li class="active">
-                    <a href="Index.php">Inicio</a>
+                    <a href="Index.php">
+                        <i class="fas fa-home"></i>
+                        Perfil
+                    </a>
                 </li>
                 <li>
-                    <a href="ListaCategorias.php">Categorias</a>
+                    <a href="ListaCategorias.php">
+                        <i class="fas fa-briefcase"></i>
+                        Categorias
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
                 </li>
                 <li>
-                    <a href="#">Portafolio</a>
-                </li>
-                <li>
-                    <a href="#">Contactos</a>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
                 </li>
             </ul>
         </nav>
@@ -121,18 +127,18 @@
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
                     </button>
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">
-                        Abrir modal
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#miModal">
+                        <span>Usuario</span>
                     </button>
                 </div>
             </nav>
         </div>
 
         <center>
-        <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px">
+        <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px; position: static;">
         	<table class="tablaCate">
         		<tr >
-        			<td class="listCate">
+        			<td class="listCate1">
 			        	<div class="card" style="width: 18rem;">
 							<img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
 							<ul class="list-group list-group-flush">
@@ -143,7 +149,37 @@
 						</div>  
         			</td>
 
-        			<td class="listCate">
+        			<td class="listCate1">
+			        	<div class="card" style="width: 18rem;">
+							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
+							 <ul class="list-group list-group-flush">
+							 	<center>
+							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+							 	</center>
+							 </ul>
+						</div>
+        			</td>
+        			<td class="listCate1">
+			        	<div class="card" style="width: 18rem;">
+							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
+							 <ul class="list-group list-group-flush">
+							 	<center>
+							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+							 	</center>
+							 </ul>
+						</div>
+        			</td>
+        			<td class="listCate1">
+			        	<div class="card" style="width: 18rem;">
+							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
+							 <ul class="list-group list-group-flush">
+							 	<center>
+							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+							 	</center>
+							 </ul>
+						</div>
+        			</td>
+        			<td class="listCate1">
 			        	<div class="card" style="width: 18rem;">
 							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
 							 <ul class="list-group list-group-flush">
