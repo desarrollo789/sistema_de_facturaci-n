@@ -95,7 +95,7 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="Index.php">
+                    <a href="Perfil.php">
                         <i class="fas fa-home"></i>
                         Perfil
                     </a>
@@ -117,7 +117,7 @@
                 </li>
             </ul>
         </nav>
-    
+    </div>
         <!-- Page Content -->
         <div id="content">
     
@@ -135,15 +135,16 @@
         </div>
 
         <center>
-        <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px">
-            <table class="tablaCate">
+        <div  id="content" style="margin-top: 80px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <table class="tablaCate" align="center">
                 <tr>
                     <td colspan="4">
                         <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#nuevaCategoria">Agregar producto</button>
                     </td>
                 </tr>
                 <tr >
-                    <td class="listCate2">
+                    <td class="listCate1">
                         <div class="card mb-3" style="max-width: 540px;">
                           <div class="row no-gutters">
                             <div class="col-md-4">
@@ -169,7 +170,7 @@
                         </div> 
                     </td>
 
-                    <td class="listCate2">
+                    <td class="listCate1">
                         <div class="card mb-3" style="max-width: 540px;">
                           <div class="row no-gutters">
                             <div class="col-md-4">
@@ -195,7 +196,7 @@
                         </div> 
                     </td>
 
-                    <td class="listCate2">
+                    <td class="listCate1">
                         <div class="card mb-3" style="max-width: 540px;">
                           <div class="row no-gutters">
                             <div class="col-md-4">
@@ -221,37 +222,13 @@
                         </div> 
                     </td>
 
-                    <td class="listCate2">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
-                              <div class="opciones2">
-                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Lapiz</label></li>
-                                    <li>Color: <label>Negro</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
+                    
                 </tr>
             </table>
+        </nav>
         </div>
         </center>
         <!--<div class="overlay"></div>-->
-</div>
 
 <!---------Modal para nuevo producto--------------->
    <!-------------------------------------------------->

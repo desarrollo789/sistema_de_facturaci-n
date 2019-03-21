@@ -62,7 +62,7 @@
                         </div>                                                                       
                 </div>
                 <!-- Login Form -->
-                <form action="AdminCategorias.php">
+                <form action="Perfil.php">
                     <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
                     <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
                     <input type="submit" class="fadeIn fourth" value="Log In">
@@ -79,97 +79,35 @@
     </div>
 </div>    
 
-
-    
-        <!-- Sidebar -->
-        <nav id="sidebar">
-            <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="Index.php">
-                        <i class="fas fa-home"></i>
-                        Perfil
-                    </a>
-                </li>
-                <li>
-                    <a href="ListaCategorias.php">
-                        <i class="fas fa-briefcase"></i>
-                        Categorias
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul>
-        </nav>
-    
-        <!-- Page Content -->
-        <div id="content">
-    
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Menu</span>
-                    </button>
-
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#miModal">
-                        <span>Usuario</span>
-                    </button>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Icon -->
+                <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
+                    <div class="btn-group">
+                        <center>
+                            <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                        </center>   
+                    </div>                                                                       
                 </div>
-            </nav>
-        </div>
+                <!-- Login Form -->
+                <form action="Perfil.php">
+                    <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
+                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
 
-        <center>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px; margin-right: 20px; margin-left: 20px;">
-             
-            <div style="margin-left: 25%;">
-                <center>
-                <table style="margin-right: 100px;">
-                    <tr>
-                        <td>
-                           <img src="img/sidebar_usuario-corporativo.png" style="padding-left: 35%;"> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-group">
-                                <label for="exampleFormControlFile1">Seleccione una iamgen</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="CI" style="text-align: left; width: 100%;">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre" style="text-align: left; width: 100%;">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apellido Paterno" style="text-align: left; width: 100%;">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apellido Materno" style="text-align: left; width: 100%;">
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                </center>
-            </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Tipo de Usuario</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Administrador</option>
+                          <option>Cajero</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" class="fadeIn fourth" value="Aceptar">
+                </form>
 
                 
-        </nav>
-        </center>
+
+            </div>
 
    
 

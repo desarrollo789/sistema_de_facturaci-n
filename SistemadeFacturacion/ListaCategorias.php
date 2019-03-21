@@ -95,7 +95,7 @@
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="Index.php">
+                    <a href="Perfil.php">
                         <i class="fas fa-home"></i>
                         Perfil
                     </a>
@@ -117,6 +117,7 @@
                 </li>
             </ul>
         </nav>
+    </div>
     
         <!-- Page Content -->
         <div id="content">
@@ -134,9 +135,9 @@
             </nav>
         </div>
 
-        <center>
-        <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px; position: static;">
-        	<table class="tablaCate">
+        <div id="content" style="margin-top: 80px; min-height: 500px; min-width: 800px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        	<table class="tablaCate" align="center">
         		<tr >
         			<td class="listCate1">
 			        	<div class="card" style="width: 18rem;">
@@ -159,42 +160,13 @@
 							 </ul>
 						</div>
         			</td>
-        			<td class="listCate1">
-			        	<div class="card" style="width: 18rem;">
-							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-							 <ul class="list-group list-group-flush">
-							 	<center>
-							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
-							 	</center>
-							 </ul>
-						</div>
-        			</td>
-        			<td class="listCate1">
-			        	<div class="card" style="width: 18rem;">
-							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-							 <ul class="list-group list-group-flush">
-							 	<center>
-							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
-							 	</center>
-							 </ul>
-						</div>
-        			</td>
-        			<td class="listCate1">
-			        	<div class="card" style="width: 18rem;">
-							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-							 <ul class="list-group list-group-flush">
-							 	<center>
-							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
-							 	</center>
-							 </ul>
-						</div>
-        			</td>
+        			
+        			
         		</tr>
         	</table>
+        </nav>
         </div>
-        </center>
         <!--<div class="overlay"></div>-->
-</div>
 
    
 

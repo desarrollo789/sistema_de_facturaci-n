@@ -6,18 +6,21 @@
 	margin-right: 2.5%;
 	display: inline-flex;
 	margin-top: 20px;
+
+	border: solid;
+	position: absolute;
 }
 .listCate1{
-	padding-left: 15px;
-	padding-right: 15px;
-	display: inline-flex;
-	margin-top: 20px;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: inline-block;
 }
 .listCate2{
-	padding-left: 4%;
-	padding-right: 4%;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
 	display: inline-block;
-	margin-top: 20px;
 }
 li{
 	list-style: none;

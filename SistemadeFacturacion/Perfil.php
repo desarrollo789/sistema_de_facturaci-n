@@ -24,9 +24,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     
 
-    <link rel="stylesheet" type="text/css" href="Estilos/estilo2.css">
-
-
 </head>
 
 <body>
@@ -83,7 +80,7 @@
 </div>    
 
 
-    <div class="wrapper">
+    
         <!-- Sidebar -->
         <nav id="sidebar">
             <div id="dismiss">
@@ -127,6 +124,7 @@
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
                     </button>
+
                     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#miModal">
                         <span>Usuario</span>
                     </button>
@@ -134,103 +132,47 @@
             </nav>
         </div>
 
-        <div id="content" style="margin-top: 80px;">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <table class="tablaCate">
-                <tr >
-                    <td class="listCate2">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
+        <center>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 100px; margin-right: 20px; margin-left: 20px;">
+             
+            <div style="margin-left: 25%;">
+                <center>
+                <table style="margin-right: 100px;">
+                    <tr>
+                        <td>
+                           <img src="img/sidebar_usuario-corporativo.png" style="padding-left: 35%;"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="CI" style="text-align: left; width: 100%;">
                             </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Marcador de agua</label></li>
-                                    <li>Color: <label>Negro</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre" style="text-align: left; width: 100%;">
                             </div>
-                          </div>
-                        </div> 
-                    </td>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apellido Paterno" style="text-align: left; width: 100%;">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apellido Materno" style="text-align: left; width: 100%;">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                </center>
+            </div>
 
-                    <td class="listCate2">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Lapiz</label></li>
-                                    <li>Color: <label>Rojo</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
-
-                    <td class="listCate2">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Lapiz</label></li>
-                                    <li>Color: <label>Verde</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
-
-                    <td class="listCate2">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Lapiz</label></li>
-                                    <li>Color: <label>Azul</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
-                </tr>
-            </table>
+                
         </nav>
-        </div>
-        <!--<div class="overlay"></div>-->
-</div>
+        </center>
+
+   
+
+
+
+
+
 
      <!-- jQuery CDN - Slim version (=without AJAX) -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

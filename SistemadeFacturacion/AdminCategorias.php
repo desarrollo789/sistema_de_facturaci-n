@@ -90,12 +90,12 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+                <h3>Sistema de Inevtario</h3>
             </div>
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="Index.php">
+                    <a href="Perfil.php">
                         <i class="fas fa-home"></i>
                         Perfil
                     </a>
@@ -117,10 +117,9 @@
                 </li>
             </ul>
         </nav>
-    
+    </div>
         <!-- Page Content -->
         <div id="content">
-    
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
@@ -132,17 +131,18 @@
                     </button>
                 </div>
             </nav>
+        </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: static;">
-            <center>
-        	<table class="tablaCate">
+        <div id="content" style="margin-top: 80px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        	<table class="tablaCate" align="center">
                 <tr>
                     <td colspan="4">
                         <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#nuevaCategoria">Agregar Categoria</button>
                     </td>
                 </tr>
-        		<tr >
-        			<td class="listCate">
+        		<tr>
+        			<td class="listCate1">
 			        	<div class="card" style="width: 18rem;">
 							<img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
                             <div class="opciones">
@@ -156,79 +156,63 @@
 							</ul>
 						</div>  
         			</td>
-
-        			<td class="listCate">
-			        	<div class="card" style="width: 18rem;">
-							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-                             <div class="opciones">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
-                            </div>
-							 <ul class="list-group list-group-flush">
-							 	<center>
-							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
-							 	</center>
-							 </ul>
-						</div>
-        			</td>
-
-                    <td class="listCate">
+                    <td class="listCate1">
                         <div class="card" style="width: 18rem;">
-
-                             <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-                             <div class="opciones">
+                            <img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
+                            <div class="opciones">
                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
                                 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
                             </div>
-                             <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
                                 <center>
-                                <li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+                                <li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
                                 </center>
-                             </ul>
-                        </div>
+                            </ul>
+                        </div>  
                     </td>
-                    <td class="listCate">
+                    <td class="listCate1">
                         <div class="card" style="width: 18rem;">
-                             <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-                             <div class="opciones">
+                            <img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
+                            <div class="opciones">
                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
                                 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
                             </div>
-                             <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
                                 <center>
-                                <li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+                                <li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
                                 </center>
-                             </ul>
-                        </div>
+                            </ul>
+                        </div>  
                     </td>
-                    <td class="listCate">
+                    <td class="listCate1">
                         <div class="card" style="width: 18rem;">
-                             <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-                             <div class="opciones">
+                            <img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
+                            <div class="opciones">
                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
                                 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
                             </div>
-                             <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
                                 <center>
-                                <li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+                                <li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
                                 </center>
-                             </ul>
-                        </div>
+                            </ul>
+                        </div>  
                     </td>
-                    <td class="listCate">
+                    <td class="listCate1">
                         <div class="card" style="width: 18rem;">
-                             <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-                             <div class="opciones">
+                            <img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
+                            <div class="opciones">
                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
                                 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
                             </div>
-                             <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
                                 <center>
-                                <li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+                                <li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
                                 </center>
-                             </ul>
-                        </div>
+                            </ul>
+                        </div>  
                     </td>
+                    
 
                     <!--<td class="listCate">
                         <div class="card" id="cardnew" style="width: 18rem;">
@@ -238,10 +222,10 @@
 
         		</tr>
         	</table>
-            </center>
         </nav>
+        </div>
         <!--<div class="overlay"></div>-->
-</div>
+
 
    <!---------Modal para nueva categoria--------------->
    <!-------------------------------------------------->
@@ -272,7 +256,6 @@
             </div>
           </div>
         </div>
-
     <!---------Modal para modificar categoria--------------->
    <!-------------------------------------------------->
         <div class="modal fade" id="modificarCategoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -340,3 +323,4 @@
 </body>
 
 </html>
+
