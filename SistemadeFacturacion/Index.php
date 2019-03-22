@@ -23,6 +23,7 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     
+    <link rel="stylesheet" type="text/css" href="Estilos/estilo2.css">
 
 </head>
 
@@ -37,78 +38,35 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    
-       
-<div class="container">
-    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            
-        </div>
-        <!-- Modal ini -->
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Tabs Titles -->
-                <div class="modal-header">            
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- Icon -->
-                <div class="fadeIn first" id = logo>            
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default">
-                                <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
-                            </button>     
-                        </div>                                                                       
-                </div>
-                <!-- Login Form -->
-                <form action="Perfil.php">
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                    <input type="submit" class="fadeIn fourth" value="Log In">
-                </form>
 
-                <!-- Remind Passowrd -->
-                <div id="formFooter">
-                    <a class="underlineHover" href="#">Forgot Password?</a>
-                </div>
 
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Icon -->
+            <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
+                <div class="btn-group">
+                    <center>
+                        <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                    </center>   
+                </div>                                                                       
             </div>
+            <!-- Login Form -->
+            <form action="Perfil.php">
+                <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
+                <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
+
+                <center>
+                <label for="exampleFormControlSelect1">Tipo de Usuario</label>
+                <select class="form-control" id="exampleFormControlSelect1" style="margin-bottom: 30px; width: 50%;">
+                  <option>Administrador</option>
+                  <option>Cajero</option>
+                </select>
+                </center>
+                    
+                <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
+            </form>
         </div>
-        <!-- Modal end -->
     </div>
-</div>    
-
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Icon -->
-                <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
-                    <div class="btn-group">
-                        <center>
-                            <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
-                        </center>   
-                    </div>                                                                       
-                </div>
-                <!-- Login Form -->
-                <form action="Perfil.php">
-                    <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
-                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
-
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Tipo de Usuario</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                          <option>Administrador</option>
-                          <option>Cajero</option>
-                        </select>
-                    </div>
-
-                    <input type="submit" class="fadeIn fourth" value="Aceptar">
-                </form>
-
-                
-
-            </div>
-
    
 
 

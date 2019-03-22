@@ -90,11 +90,20 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+
+                <a data-toggle="modal" data-target="#miPerfil" style="cursor: pointer;" ><img src="img/sidebar_usuario-corporativo.png" width="150px" style="border-radius: 100px;"></a>
+
+                <label>Nombre del Usuario</label> <br>
+                <label>Cargo</label><br>
+                <button type="button" class="btn botonP" data-toggle="modal" data-target="#miModal">Editar Perfil</button>
+
+            </div>
+            <div class="sidebar-header">
+                <h3>Sistema de Inevtario</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
+                <li>
                     <a href="Perfil.php">
                         <i class="fas fa-home"></i>
                         Perfil
@@ -105,15 +114,6 @@
                         <i class="fas fa-briefcase"></i>
                         Categorias
                     </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
                 </li>
             </ul>
         </nav>
@@ -136,7 +136,8 @@
         </div>
 
         <div id="content" style="margin-top: 80px; min-height: 500px; min-width: 800px;">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h1 style="margin-top: 20px;margin-bottom: 40px;">Lista de categorias</h1>
+        <nav>
         	<table class="tablaCate" align="center">
         		<tr >
         			<td class="listCate1">
@@ -144,7 +145,7 @@
 							<img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
 							<ul class="list-group list-group-flush">
 							  	<center>
-							  	<li class="list-group-item"><a href="ListaProductos.php" class="btn btn-primary">Escolares</a></li>
+							  	<li><a href="ListaProductos.php" class="btn btn-primary" style="width: 100%;">Escolares</a></li>
 							  	</center>
 							</ul>
 						</div>  
@@ -155,7 +156,7 @@
 							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
 							 <ul class="list-group list-group-flush">
 							 	<center>
-							 	<li class="list-group-item"><a href="#" class="btn btn-primary">Utiles de Cocina</a></li>
+							 	<li><a href="#" class="btn btn-primary" style="width: 100%;">Utiles de Cocina</a></li>
 							 	</center>
 							 </ul>
 						</div>

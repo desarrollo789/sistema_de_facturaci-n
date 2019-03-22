@@ -48,38 +48,67 @@
             
         </div>
         <!-- Modal ini -->
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Tabs Titles -->
-                <div class="modal-header">            
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="modal-header">            
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <!-- Icon -->
-                <div class="fadeIn first" id = logo>            
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default">
-                                <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
-                            </button>     
-                        </div>                                                                       
-                </div>
-                <!-- Login Form -->
-                <form action="AdminCategorias.php">
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                    <input type="submit" class="fadeIn fourth" value="Log In">
-                </form>
-
-                <!-- Remind Passowrd -->
-                <div id="formFooter">
-                    <a class="underlineHover" href="#">Forgot Password?</a>
-                </div>
-
+            <!-- Icon -->
+            <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
+                <div class="btn-group">
+                    <center>
+                        <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                    </center>   
+                </div>                                                                       
             </div>
+            <!-- Login Form -->
+            <form action="Perfil.php">
+                <input type="text" id="Ci" class="fadeIn second" name="login" placeholder="Ci">
+                <input type="text" id="Nombre" class="fadeIn second" name="login" placeholder="Nombre">
+                <input type="text" id="apellP" class="fadeIn second" name="login" placeholder="Apellido Paterno">
+                <input type="text" id="apellM" class="fadeIn second" name="login" placeholder="Apellido Materno" style="margin-bottom: 30px;">
+                <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
+            </form>
         </div>
+    </div>
         <!-- Modal end -->
     </div>
+
+    <div class="modal fade" id="miPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            
+        </div>
+        <!-- Modal ini -->
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="modal-header">            
+                <h3>Perfil</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- Icon -->
+            <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
+                <div class="btn-group">
+                    <center>
+                        <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                    </center>   
+                </div>                                                                       
+            </div>
+            <!-- Login Form -->
+            <form action="Perfil.php">
+                <input type="text" disabled="true" id="Ci" class="fadeIn second" name="login" placeholder="Ci">
+                <input type="text" disabled="true" id="Nombre" class="fadeIn second" name="login" placeholder="Nombre">
+                <input type="text" disabled="true" id="apellP" class="fadeIn second" name="login" placeholder="Apellido Paterno">
+                <input type="text" disabled="true" id="apellM" class="fadeIn second" name="login" placeholder="Apellido Materno" style="margin-bottom: 30px;">
+            </form>
+        </div>
+    </div>
+        <!-- Modal end -->
+    </div>
+
 </div>    
 
 
@@ -90,11 +119,20 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
             <div class="sidebar-header">
+
+                <a data-toggle="modal" data-target="#miPerfil" style="cursor: pointer;" ><img src="img/sidebar_usuario-corporativo.png" width="150px" style="border-radius: 100px;"></a>
+
+                <label>Nombre del Usuario</label> <br>
+                <label>Cargo</label><br>
+                <button type="button" class="btn botonP" data-toggle="modal" data-target="#miModal">Editar Perfil</button>
+
+            </div>
+            <div class="sidebar-header">
                 <h3>Sistema de Inevtario</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
+                <li>
                     <a href="Perfil.php">
                         <i class="fas fa-home"></i>
                         Perfil
@@ -105,15 +143,6 @@
                         <i class="fas fa-briefcase"></i>
                         Categorias
                     </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
                 </li>
             </ul>
         </nav>
@@ -127,14 +156,15 @@
                         <span>Menu</span>
                     </button>
                     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#miModal">
-                        <span>Usuario</span>
-                    </button>
+                        <span>Ver Compras</span>
+                    </button type="button" class="btn btn-info">
                 </div>
             </nav>
         </div>
 
-        <div id="content" style="margin-top: 80px;">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="content" style="margin-top: 90px;">
+            <h1 style="margin-top: 20px;margin-bottom: 40px;">Lista de Categorias</h1>
+        <nav>
         	<table class="tablaCate" align="center">
                 <tr>
                     <td colspan="4">
@@ -145,27 +175,26 @@
         			<td class="listCate1">
 			        	<div class="card" style="width: 18rem;">
 							<img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
-                            <div class="opciones">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
+                            <div class="opciones" style="width: 100%;" align="center">
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 49%;">Modificar</button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 49%;">X</button>
                             </div>
 							<ul class="list-group list-group-flush">
 							  	<center>
-							  	<li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
+							  	<li><a href="AdminProductos.php" class="btn btn-primary" style="width: 100%;">Material Escolar</a></li>
 							  	</center>
 							</ul>
 						</div>  
-        			</td>
-                    <td class="listCate1">
+        			</td><td class="listCate1">
                         <div class="card" style="width: 18rem;">
                             <img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
-                            <div class="opciones">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
+                            <div class="opciones" style="width: 100%;" align="center">
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 49%;">Modificar</button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 49%;">X</button>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <center>
-                                <li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
+                                <li><a href="AdminProductos.php" class="btn btn-primary" style="width: 100%;">Material Escolar</a></li>
                                 </center>
                             </ul>
                         </div>  
@@ -173,41 +202,13 @@
                     <td class="listCate1">
                         <div class="card" style="width: 18rem;">
                             <img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
-                            <div class="opciones">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
+                            <div class="opciones" style="width: 100%;" align="center">
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 49%;">Modificar</button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 49%;">X</button>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <center>
-                                <li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
-                                </center>
-                            </ul>
-                        </div>  
-                    </td>
-                    <td class="listCate1">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
-                            <div class="opciones">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <center>
-                                <li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
-                                </center>
-                            </ul>
-                        </div>  
-                    </td>
-                    <td class="listCate1">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
-                            <div class="opciones">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <center>
-                                <li class="list-group-item"><a href="AdminProductos.php" class="btn btn-primary">Material Escolar</a></li>
+                                <li><a href="AdminProductos.php" class="btn btn-primary" style="width: 100%;">Material Escolar</a></li>
                                 </center>
                             </ul>
                         </div>  

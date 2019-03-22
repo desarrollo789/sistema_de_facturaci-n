@@ -90,11 +90,20 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
             <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
+
+                <a data-toggle="modal" data-target="#miPerfil" style="cursor: pointer;" ><img src="img/sidebar_usuario-corporativo.png" width="150px" style="border-radius: 100px;"></a>
+
+                <label>Nombre del Usuario</label> <br>
+                <label>Cargo</label><br>
+                <button type="button" class="btn botonP" data-toggle="modal" data-target="#miModal">Editar Perfil</button>
+
+            </div>
+            <div class="sidebar-header">
+                <h3>Sistema de Inevtario</h3>
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active">
+                <li>
                     <a href="Perfil.php">
                         <i class="fas fa-home"></i>
                         Perfil
@@ -105,15 +114,6 @@
                         <i class="fas fa-briefcase"></i>
                         Categorias
                     </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
                 </li>
             </ul>
         </nav>
@@ -135,8 +135,9 @@
         </div>
 
         <center>
-        <div  id="content" style="margin-top: 80px;">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div  id="content" style="margin-top: 90px; padding-left: 10%;">
+            <h1 style="margin-top: 20px;margin-bottom: 40px;">Lista de Productos</h1>
+        <nav>
             <table class="tablaCate" align="center">
                 <tr>
                     <td colspan="4">
@@ -149,9 +150,9 @@
                           <div class="row no-gutters">
                             <div class="col-md-4">
                               <img src="img/cintas.jpg" class="card-img">
-                              <div class="opciones2">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
+                              <div class="opciones" style="width: 100%;" align="center">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 48%;">X</button>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Modificar</button>
                               </div>
                             </div>
                             <div class="col-md-8">
@@ -174,17 +175,17 @@
                         <div class="card mb-3" style="max-width: 540px;">
                           <div class="row no-gutters">
                             <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
-                              <div class="opciones2">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
+                              <img src="img/cintas.jpg" class="card-img">
+                              <div class="opciones" style="width: 100%;" align="center">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 48%;">X</button>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Modificar</button>
                               </div>
                             </div>
                             <div class="col-md-8">
                               <div class="card-body">
                                 <h5 class="card-title">Lapiceros</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Lapiz</label></li>
+                                    <li>Nombre: <label>Marcador de agua</label></li>
                                     <li>Color: <label>Negro</label></li>
                                     <li>Marca: <label>Faber Castell</label></li>
                                     <li>Precio: <label>5</label> Bs</li>
@@ -200,17 +201,17 @@
                         <div class="card mb-3" style="max-width: 540px;">
                           <div class="row no-gutters">
                             <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
-                              <div class="opciones2">
-                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion">X</button>
-                                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria">Modificar</button>
-                                </div>
+                              <img src="img/cintas.jpg" class="card-img">
+                              <div class="opciones" style="width: 100%;" align="center">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 48%;">X</button>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Modificar</button>
+                              </div>
                             </div>
                             <div class="col-md-8">
                               <div class="card-body">
                                 <h5 class="card-title">Lapiceros</h5>
                                 <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Lapiz</label></li>
+                                    <li>Nombre: <label>Marcador de agua</label></li>
                                     <li>Color: <label>Negro</label></li>
                                     <li>Marca: <label>Faber Castell</label></li>
                                     <li>Precio: <label>5</label> Bs</li>
@@ -221,6 +222,7 @@
                           </div>
                         </div> 
                     </td>
+                    
 
                     
                 </tr>

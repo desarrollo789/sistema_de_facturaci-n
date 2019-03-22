@@ -1,6 +1,14 @@
 .parrafo{
 	text-align: justify;
 }
+body{
+	min-width: 600px;
+	min-height: 800px;
+}
+#content{
+	min-width: 100px;
+	min-height: 400px;
+}
 /*----------------------- lista de productos ---------------------*/
 .listCate{
 	margin-right: 2.5%;
@@ -37,9 +45,21 @@ li{
 	position: absolute;
 	max-width: 350px;
 	max-height: 200px;
+
 }
 .opciones2{
 	position: absolute;
+}
+.botonP{
+	background-color: transparent;
+	border: solid 1px;
+	border-color: white;
+	color: white;
+}
+.botonP:hover{
+	background-color: white;
+	color: blue;
+	border-color: blue;
 }
 /*
 #cardnew{
