@@ -11,26 +11,27 @@
                $conn = sqlsrv_connect($serverName, $connectionOptions);    
                if ($conn === true) {  
                     echo "Connection was established";  
-                    echo "<br>";                                
-                    $tsql = $x;  
-                    $stmt = sqlsrv_query($conn, $tsql);  
-                    if ($stmt === false) {
-                         echo "Error in query execution";  
-                         echo "<br>";  
-                         die(print_r(sqlsrv_errors(), true));  
-                    }
-               }
+                    echo "<br>";                                                                      
+               }   
+               else
+               {
+                    echo "Error in connection execution";  
+                    echo "<br>";  
+                    die(print_r(sqlsrv_errors(), true));                    
+               }                       
           }
           public function getConeccion(){
-               return $this->conn;
+               return $this->conn;               
            }
-           public function sentrequest($t, $x, $y){
+          public function closeConnection(){
+               sqlsrv_close();
+          }
+           public function sentrequest($params, $tsql){
                 //Insert Query
                echo ("Inserting a new row into table" . PHP_EOL);
-
-               $tsql= "INSERT INTO $t (para) VALUES ($x,$y);";
-               $params = array('Jake','United States');
-               $getResults= sqlsrv_query($conn, $tsql, $params);
+               // $tsql= "INSERT INTO TestSchema.Employees (para) VALUES (?,?);";
+               // $params = array('Jake','United States');
+               $getResults= sqlsrv_query((getConeccion()), $tsql, $params);
                $rowsAffected = sqlsrv_rows_affected($getResults);
                if ($getResults == FALSE or $rowsAffected == FALSE)
                {
@@ -39,28 +40,28 @@
                echo ($rowsAffected. " row(s) inserted: " . PHP_EOL);
                sqlsrv_free_stmt($getResults);
            } 
-           public function updaterequest()
+           public function updaterequest($params, $tsql, $userToUpdate)
            {
                 //Update Query
-                $userToUpdate = 'Nikita';
-                $tsql= "UPDATE TestSchema.Employees SET Location = ? WHERE Name = ?";
-                $params = array('Sweden', $userToUpdate);
+               //  $userToUpdate = 'Nikita';
+               //  $tsql= "UPDATE TestSchema.Employees SET Location = ? WHERE Name = ?";
+               //  $params = array('Sweden', $userToUpdate);
                 echo("Updating Location for user " . $userToUpdate . PHP_EOL);
            
-                $getResults= sqlsrv_query($conn, $tsql, $params);
+                $getResults= sqlsrv_query((getConeccion()), $tsql, $params);
                 $rowsAffected = sqlsrv_rows_affected($getResults);
                 if ($getResults == FALSE or $rowsAffected == FALSE)
                 die(FormatErrors(sqlsrv_errors()));
                 echo ($rowsAffected. " row(s) updated: " . PHP_EOL);
                 sqlsrv_free_stmt($getResults);
            }
-           public function deleterequest()
+           public function deleterequest($params, $tsql, $userToDelete)
            {
                 //Delete Query
-                $userToDelete = 'Jared';
-                $tsql= "DELETE FROM TestSchema.Employees WHERE Name = ?";
-                $params = array($userToDelete);
-                $getResults= sqlsrv_query($conn, $tsql, $params);
+               //  $userToDelete = 'Jared';
+               //  $tsql= "DELETE FROM TestSchema.Employees WHERE Name = ?";
+               //  $params = array($userToDelete);
+                $getResults= sqlsrv_query((getConeccion()), $tsql, $params);
                 echo("Deleting user " . $userToDelete . PHP_EOL);
                 $rowsAffected = sqlsrv_rows_affected($getResults);
                 if ($getResults == FALSE or $rowsAffected == FALSE)
@@ -68,18 +69,18 @@
                 echo ($rowsAffected. " row(s) deleted: " . PHP_EOL);
                 sqlsrv_free_stmt($getResults);
            }
-           public function readrequest()
+           public function readrequest($tsql)
            {                
                 //Read Query
-                $tsql= "SELECT Id, Name, Location FROM TestSchema.Employees;";
-                $getResults= sqlsrv_query($conn, $tsql);
+               //  $tsql= "SELECT Id, Name, Location FROM TestSchema.Employees;";
+                $getResults= sqlsrv_query((getConeccion()), $tsql);
                 echo ("Reading data from table" . PHP_EOL);
                 if ($getResults == FALSE)
                 die(FormatErrors(sqlsrv_errors()));
                 while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
                 echo ($row['Id'] . " " . $row['Name'] . " " . $row['Location'] . PHP_EOL);                    
                 }
-                sqlsrv_free_stmt($getResults);
+                $resultado = sqlsrv_free_stmt($getResults);
            
                 function FormatErrors( $errors )
                 {
@@ -93,6 +94,7 @@
                          echo "Message: ".$error['message']."";
                     }
                 }
+                return ($resultado);
            }           
      }         
 ?>
