@@ -9,22 +9,10 @@ body{
 	min-width: 100px;
 	min-height: 400px;
 }
-/*----------------------- lista de productos ---------------------*/
-.listCate{
-	margin-right: 2.5%;
-	display: inline-flex;
-	margin-top: 20px;
 
-	border: solid;
-	position: absolute;
-}
+/*----------------------- lista de productos ---------------------*/
+
 .listCate1{
-	padding-top: 20px;
-	padding-left: 50px;
-	padding-right: 50px;
-	display: inline-block;
-}
-.listCate2{
 	padding-top: 20px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -60,6 +48,15 @@ li{
 	background-color: white;
 	color: blue;
 	border-color: blue;
+}
+#dismiss{
+	background-color: #1B9CBB;
+}
+#dismiss:hover{
+	background-color: white;
+}
+.color{
+	background-color: #1B9CBB;
 }
 /*
 #cardnew{
