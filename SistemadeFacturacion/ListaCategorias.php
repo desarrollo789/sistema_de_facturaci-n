@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Control de Inventario</title>
+    <title>Lista de Categorias</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -25,6 +25,49 @@
     
 
     <link rel="stylesheet" type="text/css" href="Estilos/estilo2.css">
+    <style type="text/css">
+        .categorias{
+            display: inline-block;
+            border: solid 1px;
+            border-color: #1B9CBB;
+            padding: 15px 15px; 
+            border-radius: 10px;
+            color: #1B9CBB;
+        }
+        .categorias:hover{
+            background-color: #1B9CBB;
+            color: white;
+
+        }
+    </style>
+    <style type="text/css">
+        #infoCant{
+            width: 420px;
+        }
+        #infoCant #infoLabel{
+            text-align: center; 
+            color: #BDBDBD;
+            transition: 0.2s;
+            font-family: "Century Gothic";
+            font-weight: bold;
+            font-size: 170%;
+        }
+        #infoCant #infoImg{
+             width: 120px;
+             transition: 0.2s;
+             opacity: 0.5;
+        }
+        #infoCant:hover #infoImg{
+            width: 150px;
+            transition: 0.2s;
+            opacity: 1;
+        }
+        #infoCant:hover #infoLabel{
+            color: #1B9CBB;
+            transition: 0.2s;
+            font-size: 175%;
+        }
+    </style>
 
 
 </head>
@@ -80,39 +123,75 @@
         </div>
         <!-- Modal end -->
     </div>
+    <div class="modal fade" id="miPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            
+        </div>
+        <!-- Modal ini -->
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <div class="modal-header">            
+                <h3>Perfil</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!-- Icon -->
+            <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
+                <div class="btn-group">
+                    <center>
+                        <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                    </center>   
+                </div>                                                                       
+            </div>
+            <!-- Login Form -->
+            <form action="Perfil.php">
+                <input type="text" disabled="true" id="Ci" class="fadeIn second" name="login" placeholder="Ci">
+                <input type="text" disabled="true" id="Nombre" class="fadeIn second" name="login" placeholder="Nombre">
+                <input type="text" disabled="true" id="apellP" class="fadeIn second" name="login" placeholder="Apellido Paterno">
+                <input type="text" disabled="true" id="apellM" class="fadeIn second" name="login" placeholder="Apellido Materno" style="margin-bottom: 30px;">
+            </form>
+        </div>
+    </div>
+        <!-- Modal end -->
+    </div>
 </div>    
 
 
     <div class="wrapper">
         <!-- Sidebar -->
-        <nav id="sidebar">
+        <nav id="sidebar" style="background-color: #1B9CBB;">
             <div id="dismiss">
                 <i class="fas fa-arrow-left"></i>
             </div>
-            <div class="sidebar-header">
 
-                <a data-toggle="modal" data-target="#miPerfil" style="cursor: pointer;" ><img src="img/sidebar_usuario-corporativo.png" width="150px" style="border-radius: 100px;"></a>
+            <a href="Perfil.php"><img src="img/inventario.png" width="210px" style="padding-left: 30px; padding-top: 30px;"></a>
 
-                <label>Nombre del Usuario</label> <br>
-                <label>Cargo</label><br>
-                <button type="button" class="btn botonP" data-toggle="modal" data-target="#miModal">Editar Perfil</button>
-
-            </div>
-            <div class="sidebar-header">
+            <br>
+            <div class="sidebar-header" style="background-color: #1B9CBB;">
                 <h3>Sistema de Inevtario</h3>
             </div>
+            <div class="sidebar-header" style="background-color: #1B9CBB;">
 
-            <ul class="list-unstyled components">
+                <label id="nombre">Brandon Kevin</label> <br>
+                <label id="apellidoPat">Triveño</label>
+                <label id="apellidoMat">Mercado</label><br>
+                <button type="button" class="btn botonP" data-toggle="modal" data-target="#miPerfil">Editar Perfil</button>
+
+            </div>
+            
+
+            <ul class="list-unstyled components" style="background-color: #1B9CBB;">
                 <li>
-                    <a href="Perfil.php">
+                    <a href="Index.php">
                         <i class="fas fa-home"></i>
-                        Perfil
+                        Inicio
                     </a>
                 </li>
                 <li>
-                    <a href="ListaCategorias.php">
+                    <a href="AdminCategorias.php" data-toggle="modal" data-target="#LoginAdmin">
                         <i class="fas fa-briefcase"></i>
-                        Categorias
+                        Administrar
                     </a>
                 </li>
             </ul>
@@ -128,48 +207,50 @@
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
                     </button>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#miModal">
-                        <span>Usuario</span>
-                    </button>
                 </div>
             </nav>
         </div>
 
-        <div id="content" style="margin-top: 80px; min-height: 500px; min-width: 800px;">
-            <h1 style="margin-top: 20px;margin-bottom: 40px;">Lista de categorias</h1>
-        <nav>
-        	<table class="tablaCate" align="center">
-        		<tr >
-        			<td class="listCate1">
-			        	<div class="card" style="width: 18rem;">
-							<img src="img/escolar.png" class="card-img-top" width="350px"; height="200px">
-							<ul class="list-group list-group-flush">
-							  	<center>
-							  	<li><a href="ListaProductos.php" class="btn btn-primary" style="width: 100%;">Escolares</a></li>
-							  	</center>
-							</ul>
-						</div>  
-        			</td>
 
-        			<td class="listCate1">
-			        	<div class="card" style="width: 18rem;">
-							 <img src="img/cocina.jpg" class="card-img-top" width="350px"; height="200px">
-							 <ul class="list-group list-group-flush">
-							 	<center>
-							 	<li><a href="#" class="btn btn-primary" style="width: 100%;">Utiles de Cocina</a></li>
-							 	</center>
-							 </ul>
-						</div>
-        			</td>
-        			
-        			
-        		</tr>
-        	</table>
-        </nav>
+
+        <div id="content" style="margin-top: 120px;">
+            <div style="margin-bottom: 70px;">
+            <center>
+            	<a href="ListaProductos.php" class="categorias">Todos</a>
+                <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>
+                <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>
+            </center>
+            </div>
         </div>
+        
         <!--<div class="overlay"></div>-->
 
-   
+
+<!--------------------------Modal para modo administrador-------------------->
+<!----------------------------------------------------------------------->
+   <div class="modal fade" id="LoginAdmin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!-- Modal ini -->
+        <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Icon -->
+            <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
+                <div class="btn-group">
+                    <center>
+                        <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                    </center>   
+                </div>                                                                       
+            </div>
+            <!-- Login Form -->
+            <form action="AdminCategorias.php">
+                <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
+                <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
+                    
+                <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
+            </form>
+        </div>
+    </div>
+        <!-- Modal end -->
+    </div>
 
 
 
