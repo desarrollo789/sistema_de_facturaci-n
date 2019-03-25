@@ -132,7 +132,7 @@
     <div class="wrapper">
         <!-- Sidebar -->
         <nav id="sidebar" style="background-color: #1B9CBB;">
-            <div id="dismiss">
+            <div id="dismiss" >
                 <i class="fas fa-arrow-left"></i>
             </div>
 
