@@ -95,7 +95,10 @@
                     }
                 }
                 return ($resultado);
-           }           
+           }
+           public function recorrer($x) {
+               return mysqli_fetch_array($x);
+          }       
      }         
 ?>
           class Conexion extends mssql

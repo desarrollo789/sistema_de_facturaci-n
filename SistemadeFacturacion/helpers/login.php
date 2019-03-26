@@ -1,9 +1,9 @@
 <?php
-    class sentencias{
-        public function ultimaId() {
-            return $this->insert_id;
-        }
-    }
+    // class sentencias{
+    //     public function ultimaId() {
+    //         return $this->insert_id;
+    //     }
+    // }
 ?>
 <?php
     session_start();
@@ -14,7 +14,7 @@
             $usuario = $_POST["usuario"];
             $password = $_POST["password"];
 
-            include('../helpers/class.Conexion.php);
+            include("../helpers/class.Conexion.php");     
 
             $db = new Conexion();
             
