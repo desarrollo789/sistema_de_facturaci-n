@@ -1,0 +1,75 @@
+.parrafo{
+	text-align: justify;
+}
+body{
+	min-width: 600px;
+	min-height: 800px;
+}
+#content{
+	min-width: 100px;
+	min-height: 400px;
+}
+
+/*----------------------- lista de productos ---------------------*/
+
+.listCate1{
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: inline-block;
+}
+li{
+	list-style: none;
+}
+/*-----------------------------------------------------------------*/
+.card-img{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.opciones{
+	position: absolute;
+	max-width: 350px;
+	max-height: 200px;
+
+}
+.opciones2{
+	position: absolute;
+}
+.botonP{
+	background-color: transparent;
+	border: solid 1px;
+	border-color: white;
+	color: white;
+}
+.botonP:hover{
+	background-color: white;
+	color: blue;
+	border-color: blue;
+}
+#dismiss{
+	background-color: #1B9CBB;
+}
+#dismiss:hover{
+	background-color: white;
+}
+.color{
+	background-color: #1B9CBB;
+}
+/*
+#cardnew{
+	background-color: #A4A4A4;
+}
+#cardnew:hover{
+}
+#imgnew{
+	padding: 50px 50px;
+	transition: 0.5s;
+}
+#imgnew:hover{
+	padding: 35px 35px;
+	transition: 0.5s;
+}
+*/
