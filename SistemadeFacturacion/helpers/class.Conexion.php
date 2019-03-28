@@ -1,6 +1,6 @@
 
 <?php
-     class Conexion
+     class Conexion 
      {
           private $conn;
           public function __construct(){               
@@ -101,7 +101,7 @@
           }       
      }         
 ?>
-          class Conexion extends mssql
+          <!-- class Conexion extends mssql
           {               
                    
                               //Insert Query
@@ -240,4 +240,4 @@
                }  
                // [A.3] All has gone well, so let the program end.  
           }  
-     ?>
+     ?> -->
