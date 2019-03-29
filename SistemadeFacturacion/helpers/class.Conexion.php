@@ -5,7 +5,8 @@
           private $conn;
           public function __construct(){               
                $serverName = "DESKTOP-ISJ34KL\PRUEBAS";
-               $connectionOptions = array( "Database"=>"facturacion");               
+               $connectionOptions = array( "Database"=>"facturacion");    
+                          
                $this->conn = sqlsrv_connect($serverName, $connectionOptions);             
                // [A.2] Connect, which proceeds to issue a query command.  
                $conn = sqlsrv_connect($serverName, $connectionOptions);    
