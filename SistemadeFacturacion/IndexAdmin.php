@@ -70,7 +70,28 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     
        
-<div class="modal fade" id="miPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Cerrar Cesion</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Desea salir del modo Administrador?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary"data-dismiss="modal" data-toggle="modal" data-target="#confirmarElimProduc">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        <!-- Modal end -->
+    </div>
+      
+    <div class="modal fade" id="miPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             
         </div>
@@ -167,7 +188,7 @@
 
             <ul class="list-unstyled components" style="background-color: #1B9CBB;">
                 <li>
-                    <a href="Index.php">
+                    <a href="IndexAdmin.php">
                         <i class="fas fa-home"></i>
                         Inicio
                     </a>
@@ -190,6 +211,10 @@
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
+                    </button>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#miModal">
+                        <i class="sign-outt"></i>
+                        <span>Salir</span>
                     </button>
                 </div>
             </nav>
