@@ -19,7 +19,7 @@
 
     <!-- Our Custom JS -->
     <script defer src="anim.js"></script>
-    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     
@@ -108,7 +108,7 @@
             <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
                 <div class="btn-group">
                     <center>
-                        <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                        <img src="img\sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
                     </center>   
                 </div>                                                                       
             </div>
@@ -146,7 +146,7 @@
                 <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">                
                     <div class="btn-group">
                         <center>
-                            <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon"alt="User Icon" />
+                            <img src="img\sidebar_usuario-corporativo.png" id="icon"alt="User Icon" />
                         </center>   
                     </div>                                                                       
                 </div>
