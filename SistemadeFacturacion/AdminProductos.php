@@ -208,6 +208,10 @@
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
                     </button>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#miModal">
+                        <i class="sign-outt"></i>
+                        <span>Salir</span>
+                    </button>
                 </div>
             </nav>
         </div>
