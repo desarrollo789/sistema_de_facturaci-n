@@ -210,12 +210,6 @@
                         Inicio
                     </a>
                 </li>
-                <li>
-                    <a href="AdminCategorias.php" data-toggle="modal" data-target="#LoginAdmin">
-                        <i class="fas fa-briefcase"></i>
-                        Administrar
-                    </a>
-                </li>
             </ul>
         </nav>
     </div>

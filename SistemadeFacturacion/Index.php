@@ -133,7 +133,7 @@
                 <!-- Login Form -->
                 <form action="IndexAdmin.php">
                     <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
-                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
+                    <input type="password" id="password" class="fadeIn second" name="password" placeholder="password" style="margin-bottom: 30px;">
                         
                     <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
                 </form>

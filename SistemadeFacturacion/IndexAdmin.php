@@ -84,7 +84,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary"data-dismiss="modal" data-toggle="modal" data-target="#confirmarElimProduc">Aceptar</button>
+                <a type="button" class="btn btn-primary" href="Index.php">Aceptar</a>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
                 <!-- Login Form -->
                 <form action="IndexAdmin.php">
                     <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
-                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
+                    <input type="password" id="password" class="fadeIn second" name="password" placeholder="password" style="margin-bottom: 30px;">
                         
                     <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
                 </form>
@@ -191,12 +191,6 @@
                     <a href="IndexAdmin.php">
                         <i class="fas fa-home"></i>
                         Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="AdminCategorias.php" data-toggle="modal" data-target="#LoginAdmin">
-                        <i class="fas fa-briefcase"></i>
-                        Administrar
                     </a>
                 </li>
             </ul>

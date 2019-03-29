@@ -212,12 +212,6 @@
                         Inicio
                     </a>
                 </li>
-                <li>
-                    <a href="AdminCategorias.php" data-toggle="modal" data-target="#LoginAdmin">
-                        <i class="fas fa-briefcase"></i>
-                        Administrar
-                    </a>
-                </li>
             </ul>
         </nav>
     </div>
@@ -253,7 +247,7 @@
                             <label>ACCION</label>
                         </td>
                     </tr>
-                   <!-- <tr style="border-bottom: solid;">
+                   <tr style="border-bottom: solid;">
                         <td style="padding: 35px 80px;">
                             <label>Material Escolar</label>
                         </td>                    
@@ -262,7 +256,7 @@
                             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 28%;">Modificar</button>
                             <a class="btn btn-success" href="AdminProductos.php" role="button" style="width: 40%;">Ver Productos</a>
                         </td>
-                    </tr>-->
+                    </tr>
                     
                 </table>
             </center>
