@@ -178,8 +178,6 @@
         <!-- Modal end -->
 </div>  
 
-</div>    
-
 
     <div class="wrapper">
         <!-- Sidebar -->
