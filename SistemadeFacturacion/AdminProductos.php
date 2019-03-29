@@ -87,43 +87,6 @@
     
        
 <div class="container">
-    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            
-        </div>
-        <!-- Modal ini -->
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Tabs Titles -->
-                <div class="modal-header">            
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- Icon -->
-                <div class="fadeIn first" id = logo>            
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default">
-                                <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
-                            </button>     
-                        </div>                                                                       
-                </div>
-                <!-- Login Form -->
-                <form action="AdminCategorias.php">
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-                    <input type="submit" class="fadeIn fourth" value="Log In">
-                </form>
-
-                <!-- Remind Passowrd -->
-                <div id="formFooter">
-                    <a class="underlineHover" href="#">Forgot Password?</a>
-                </div>
-
-            </div>
-        </div>
-        <!-- Modal end -->
-    </div>
     <div class="modal fade" id="miPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             
@@ -147,15 +110,53 @@
             </div>
             <!-- Login Form -->
             <form action="Perfil.php">
-                <input type="text" disabled="true" id="Ci" class="fadeIn second" name="login" placeholder="Ci">
-                <input type="text" disabled="true" id="Nombre" class="fadeIn second" name="login" placeholder="Nombre">
-                <input type="text" disabled="true" id="apellP" class="fadeIn second" name="login" placeholder="Apellido Paterno">
-                <input type="text" disabled="true" id="apellM" class="fadeIn second" name="login" placeholder="Apellido Materno" style="margin-bottom: 30px;">
+                <input type="text" id="Ci" class="fadeIn second" name="login" placeholder="Ci">
+                <input type="text" id="Nombre" class="fadeIn second" name="login" placeholder="Nombre">
+                <input type="text" id="apellP" class="fadeIn second" name="login" placeholder="Apellido Paterno">
+                <input type="text" id="apellM" class="fadeIn second" name="login" placeholder="Apellido Materno" style="margin-bottom: 30px;">
+                <center>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+                </center>
             </form>
         </div>
     </div>
         <!-- Modal end -->
+</div>  
+<div class="modal fade" id="LoginAdmin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+            
     </div>
+        <!-- Modal ini -->
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <div class="modal-header">            
+                    <h3>Login</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Icon -->
+                <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">                
+                    <div class="btn-group">
+                        <center>
+                            <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon"alt="User Icon" />
+                        </center>   
+                    </div>                                                                       
+                </div>
+                <!-- Login Form -->
+                <form action="IndexAdmin.php">
+                    <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
+                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
+                        
+                    <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
+                </form>
+            </div>
+        </div>
+        <!-- Modal end -->
+</div> 
 </div>    
 
 
@@ -216,10 +217,9 @@
         <div id="content" style="margin-top: 120px;">
             <div style="margin-bottom: 70px;">
             <center>
-                <a href="#" class="categorias">Todos</a>
-                <a href="#" class="categorias">Utiles de Cocina</a>
-                <a href="#" class="categorias">Utiles de Cocina</a>
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#nuevaCategoria">Agregar producto</button>
             </center>
+            <a class="btn btn-info" href="AdminCategorias.php" role="button">Volver a Categorias</a>
             </div>
         </div>
 
@@ -228,7 +228,7 @@
             <table class="tablaCate" align="center">
                 <tr>
                     <td colspan="4">
-                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#nuevaCategoria">Agregar producto</button>
+                        
                     </td>
                 </tr>
                 <tr >
@@ -453,7 +453,7 @@
 
     <!---------Modal para confirmar eliminacion--------------->
    <!-------------------------------------------------->
-    <div class="modal fade" id="confirmarEliminacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="confirmarEliminacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -467,13 +467,32 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Aceptar</button>
+                <button type="button" class="btn btn-primary"data-dismiss="modal" data-toggle="modal" data-target="#confirmarElimProduc">Aceptar</button>
               </div>
             </div>
           </div>
         </div>
 
-
+ <!---------Modal para confirmar eliminacion del producto--------------->
+   <!-------------------------------------------------->
+    <div class="modal fade" id="confirmarElimProduc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Eliminado</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Producto Eliminado</p>  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 

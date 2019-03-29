@@ -70,31 +70,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     
        
-<div class="container">
-    <div class="modal fade" id="LoginAdmin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <!-- Modal ini -->
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Icon -->
-                <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
-                    <div class="btn-group">
-                        <center>
-                            <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
-                        </center>   
-                    </div>                                                                       
-                </div>
-                <!-- Login Form -->
-                <div id="AJAXresponse"> aqui estoy </div>
-                <form action="">
-                    <input type="text" id="usuario" class="fadeIn second" name="login" placeholder="Usuario">
-                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">                        
-                    <input type="button" id="btnlogin" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
-                </form>
-            </div>
-        </div>
-        <!-- Modal end -->
-    </div>
-    <div class="modal fade" id="miPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             
         </div>
@@ -121,18 +97,56 @@
                 <input type="text" id="Nombre" class="fadeIn second" name="login" placeholder="Nombre">
                 <input type="text" id="apellP" class="fadeIn second" name="login" placeholder="Apellido Paterno">
                 <input type="text" id="apellM" class="fadeIn second" name="login" placeholder="Apellido Materno" style="margin-bottom: 30px;">
+                <center>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+                </center>
             </form>
         </div>
     </div>
         <!-- Modal end -->
+</div>  
+
+<div class="modal fade" id="LoginAdmin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+            
     </div>
+        <!-- Modal ini -->
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <div class="modal-header">            
+                    <h3>Login</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Icon -->
+                <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">                
+                    <div class="btn-group">
+                        <center>
+                            <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon"alt="User Icon" />
+                        </center>   
+                    </div>                                                                       
+                </div>
+                <!-- Login Form -->
+                <form action="IndexAdmin.php">
+                    <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
+                    <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
+                        
+                    <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
+                </form>
+            </div>
+        </div>
+        <!-- Modal end -->
 </div>    
 
 
     <div class="wrapper">
         <!-- Sidebar -->
         <nav id="sidebar" style="background-color: #1B9CBB;">
-            <div id="dismiss" >
+            <div id="dismiss">
                 <i class="fas fa-arrow-left"></i>
             </div>
 
@@ -197,7 +211,7 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel"><label>Categorias</label></h5>
-                                <h5 class="card-title" id="infoLabel"><label>5</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label>5</label></h5>
                               </div>
                             </div>
                           </div>
@@ -215,7 +229,7 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel"><label>Productos</label></h5>
-                                <h5 class="card-title" id="infoLabel"><label>25</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label>25</label></h5>
                               </div>
                             </div>
                           </div>
@@ -232,7 +246,7 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel"><label>Clientes</label></h5>
-                                <h5 class="card-title" id="infoLabel"><label>50</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label>50</label></h5>
                               </div>
                             </div>
                           </div>
@@ -248,7 +262,7 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel"><label>Ventas</label></h5>
-                                <h5 class="card-title" id="infoLabel"><label>90</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label>90</label></h5>
                               </div>
                             </div>
                           </div>
@@ -261,18 +275,14 @@
         <!--<div class="overlay"></div>-->
 
      <!-- jQuery CDN - Slim version (=without AJAX) -->
-     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-     <!-- <script src="../SistemadeFacturacion/Resources/jQuery CDN - Slim version/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <!-- Popper.JS -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
      <!-- Bootstrap JS -->
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
      <!-- jQuery Custom Scroller CDN -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>    
-     <!-- post logim request -->  
-    <script src="../SistemadeFacturacion/helpers/POST.js"></script>
-     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>        
+
 </body>
 
 </html>
