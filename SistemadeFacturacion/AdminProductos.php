@@ -87,7 +87,7 @@
     
        
 <div class="container">
-   <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -101,7 +101,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary"data-dismiss="modal" data-toggle="modal" data-target="#confirmarElimProduc">Aceptar</button>
+                <a type="button" class="btn btn-primary" href="Index.php">Aceptar</a>
               </div>
             </div>
           </div>
