@@ -13,8 +13,7 @@ $(document).on('click', '#btnlogin', function() {
             usuario: usuario,
             password: password            
         },
-        success: function(response){    
-            $('#AJAXresponse').html('<div class="alert alert-success" role="alert">Inicio de Sesion con exito</div>');                              
+        success: function(response){                                              
             if(response == 1) {
                 $('#AJAXresponse').html('<div class="alert alert-success" role="alert">Inicio de Sesion con exito</div>');
                 // location.reload();
@@ -22,6 +21,12 @@ $(document).on('click', '#btnlogin', function() {
                 $('#AJAXresponse').html('<div class="alert alert-danger" role="alert">Error: '+response+'</div>');
             }
         }
+    }).done(function(){
+        window.setTimeout( function(){
+            window.location.href = "IndexAdmin.php";
+        }, 3000); 
     });
-
+});
+$(document).on('click', '#btnlogout', function() {
+    window.location.href = "helpers\loguot.php";
 });

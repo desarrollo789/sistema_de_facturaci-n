@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -61,9 +64,10 @@
     
      <!-- jQuery -->
      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-     
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- jQuery CDN - Full version (=with AJAX) -->
+     <script src="Resources\jQuery CDN - Full version (=with AJAX)\jquery3.3.1.js" ></script>
+    <!-- jQuery CDN - Slim version (=without AJAX)
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
@@ -84,7 +88,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <a type="button" class="btn btn-primary" href="Index.php">Aceptar</a>
+                <a type="button" id= "btnlogout" class="btn btn-primary" href="Index.php">Aceptar</a>
               </div>
             </div>
           </div>
@@ -177,11 +181,23 @@
                 <h3>Sistema de Inevtario</h3>
             </div>
             <div class="sidebar-header" style="background-color: #1B9CBB;">
+                <?php
+                  // if(!isset($_SESSION["usuario"])) {
+                  //   echo '<li><a href="#nombre" class="login logearsePOP" title="Iniciar Sesión">Iniciar Sesión</a></li>';
+                  //   echo '<label id="nombre">$_SESSION["usuario"]</label> <br>';
 
-                <label id="nombre">Brandon Kevin</label> <br>
-                <label id="apellidoPat">Triveño</label>
-                <label id="apellidoMat">Mercado</label><br>
-                <button type="button" class="btn botonP" data-toggle="modal" data-target="#miPerfil">Editar Perfil</button>
+                  // }
+                ?>
+                <?php 	if(isset($_SESSION["admin"])): ?>
+                  <label id="nombre"><?=$_SESSION["admin"]["nombre"]?></label> <br>
+                  <label id="apellidoPat"><?=$_SESSION["admin"]["apellidos"]?></label><br>                 
+                  <button type="button" class="btn botonP" data-toggle="modal" data-target="#miPerfil">Editar Perfil</button>                
+                <?php 	else: ?>
+                  <label id="nombre">Brandon Kevin</label> <br>
+                  <label id="apellidoPat">Triveño</label>
+                  <label id="apellidoMat">Mercado</label><br>
+                  <button type="button" class="btn botonP" data-toggle="modal" data-target="#miPerfil">Editar Perfil</button>
+                <?php 	endif; ?>
 
             </div>
             
@@ -307,15 +323,18 @@
         </nav>
         </div>
         <!--<div class="overlay"></div>-->
-
-     <!-- jQuery CDN - Slim version (=without AJAX) -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- jQuery CDN - Full version (=with AJAX) -->
+     <script src="Resources\jQuery CDN - Full version (=with AJAX)\jquery3.3.1.js" ></script>
+     <!-- jQuery CDN - Slim version (=without AJAX)
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
      <!-- Popper.JS -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
      <!-- Bootstrap JS -->
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
      <!-- jQuery Custom Scroller CDN -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>        
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script> 
+     <!-- post logim request -->  
+     <script src="helpers\POST.js"></script>         
 
 </body>
 
