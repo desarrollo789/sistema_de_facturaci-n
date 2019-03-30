@@ -1,11 +1,11 @@
 
 <?php
-    session_start();
+    session_start();   
     if($_POST) {
 
         if(!empty($_POST["usuario"]) and !empty($_POST["password"])) {
 
-            include("../helpers/class.Conexion.php");
+            include("../helpers\class.Conexion.php");
             $db = new Conexion;
             $db->charset();
 

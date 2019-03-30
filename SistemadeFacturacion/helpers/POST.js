@@ -28,5 +28,40 @@ $(document).on('click', '#btnlogin', function() {
     });
 });
 $(document).on('click', '#btnlogout', function() {
-    window.location.href = "helpers\loguot.php";
+    window.location.href = "helpers/loguot.php";
+});
+
+$(document).ready(function () {    
+    $.ajax({
+        type: "GET",
+        url: "helpers/obtenercaegoriasrequest.php",
+        dataType: "JSON",    
+        success: function(response){
+            if(response == 0)
+            {   var error = "";
+                error += `<label>no se pudo conectar</label>`;
+                $('#tablaCate').html(error);
+            }
+            else 
+            {
+                var categorias = response.data;
+                var resp ="";
+                categorias.forEach(function(element) {
+                    resp+= `
+                        <tr style="border-bottom: solid;">
+                            <td style="padding: 35px 80px;">
+                                <label>"${element.Nombre}"</label>
+                            </td>                    
+                            <td style="padding: 35px 80px;">
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 28%;">Eliminar</button>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 28%;">Modificar</button>
+                                <a class="btn btn-success" href="AdminProductos.php" role="button" style="width: 40%;">Ver Productos</a>
+                            </td>
+                        </tr>
+                    `;
+                });
+                $('#tablaCate').html(resp);
+            }                        
+        }
+    });
 });
