@@ -11,7 +11,7 @@
         $db = new Conexion();
         $db->charset();
 
-        $obtenerInfo = $db->query("SELECT * FROM categoria ");
+        $obtenerInfo = $db->query("SELECT * FROM categoria order by id asc");
         if($db->rows($obtenerInfo) > 0) {
 
             $resCategoria = $db->fetchAll($obtenerInfo);

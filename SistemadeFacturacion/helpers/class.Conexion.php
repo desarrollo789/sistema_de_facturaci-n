@@ -36,6 +36,6 @@
      
           public function preparada($x) {
                return mysqli_stmt_init($x);
-          }
+          }          
      }
 ?>

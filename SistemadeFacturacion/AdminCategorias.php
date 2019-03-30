@@ -241,8 +241,11 @@
             <div style="margin-bottom: 70px;">
             <center>
                 <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#nuevaCategoria">Agregar Categoria</button>
-                <table style="text-align: center;" id="tablaCate">
+                <!-- <table style="text-align: center;" id="Titulo">
                     <tr style="border-bottom: solid;">
+                        <td style="padding: 35px 80px;">
+                            <label>ID</label>
+                        </td> 
                         <td style="padding: 35px 80px;">
                             <label>CATEGORIA</label>
                         </td>                    
@@ -250,6 +253,8 @@
                             <label>ACCION</label>
                         </td>
                     </tr>
+                </table> -->
+                <table style="text-align: center;" id="tablaCate">                    
                     <!-- <tr style="border-bottom: solid;">
                         <td style="padding: 35px 80px;">
                             <label>Material Escolar</label>
@@ -334,15 +339,15 @@
               </div>
               <div class="modal-body">
                 <form>
-                    
+                    <div id="AJAXresponse"> aqui estoy </div>                    
                     <div class="form-group">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese otro Nombre" style="text-align: left; width: 100%;">
+                        <input type="text" class="form-control" id="NuevoNombreCategoria" placeholder="Ingrese otro Nombre" style="text-align: left; width: 100%;">
                     </div>
                 </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-primary" id="ModificarCategoriaConfirm">Guardar</button>
               </div>
             </div>
           </div>
@@ -359,12 +364,13 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
+              <div id="AJAXresponse"> aqui estoy </div>
               <div class="modal-body">
                 <p>Esta seguro que desea eliminar esta categoria?. Tambien se borraran todos los productos que este contenga.</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Aceptar</button>
+                <button type="button" class="btn btn-primary" id="EliminarCategoria">Aceptar</button>
               </div>
             </div>
           </div>

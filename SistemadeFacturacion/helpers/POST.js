@@ -46,15 +46,31 @@ $(document).ready(function () {
             {
                 var categorias = response.data;
                 var resp ="";
+                resp+=`
+                    <tr style="border-bottom: solid;">
+                        <td style="padding: 35px 80px;">
+                            <label>ID</label>
+                        </td> 
+                        <td style="padding: 35px 80px;">
+                            <label>CATEGORIA</label>
+                        </td>                    
+                        <td style="padding: 35px 80px;">
+                            <label>ACCION</label>
+                        </td>
+                    </tr>
+                `;
                 categorias.forEach(function(element) {
-                    resp+= `
-                        <tr style="border-bottom: solid;">
+                    resp+= `                    
+                        <tr style="border-bottom: solid; id="Categoria${element.Id}">
+                            <td style="padding: 35px 80px;">
+                                <label>"${element.Id}"</label>
+                            </td> 
                             <td style="padding: 35px 80px;">
                                 <label>"${element.Nombre}"</label>
                             </td>                    
                             <td style="padding: 35px 80px;">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 28%;">Eliminar</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 28%;">Modificar</button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 28%;"  onclick="setIdCatEliminar(${element.Id})" >Eliminar</button>
+                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 28%;"  onclick="setIdCatEliminar(${element.Id})" >Modificar</button>
                                 <a class="btn btn-success" href="AdminProductos.php" role="button" style="width: 40%;">Ver Productos</a>
                             </td>
                         </tr>
@@ -65,3 +81,55 @@ $(document).ready(function () {
         }
     });
 });
+$(document).on('click', '#EliminarCategoria', function() {
+    var id = idCategoriaEliminar;
+    $.ajax({
+        type: "POST",
+        url: "helpers/eliminarCategoria.php",
+        data: {
+            id: id                        
+        },
+        success: function(response){                                      
+            if(response == 1) {
+                $('#AJAXresponse').html('<div class="alert alert-success" role="alert">Eliminado con exito</div>');                
+            } else {
+                $('#AJAXresponse').html('<div class="alert alert-danger" role="alert">Error: '+response+'</div>');
+            } 
+        }
+    }).done(function(){
+        window.setTimeout( function(){
+            location.reload();
+        }, 3000); 
+    });
+});
+
+
+$(document).on('click', '#ModificarCategoriaConfirm', function() {
+    var id = idCategoriaEliminar;
+    var nombre = $('#NuevoNombreCategoria').val();
+    $.ajax({
+        type: "POST",
+        url: "helpers/modificarCategoria.php",
+        data: {
+            id: id,
+            nombre: nombre                      
+        },
+        success: function(response){                                      
+            if(response == 1) {
+                $('#AJAXresponse').html('<div class="alert alert-success" role="alert">Modificado con exito</div>');                
+            } else {
+                $('#AJAXresponse').html('<div class="alert alert-danger" role="alert">Error: '+response+'</div>');
+            } 
+        }
+    }).done(function(){
+        window.setTimeout( function(){
+            location.reload();
+        }, 3000); 
+    });
+});
+
+
+var idCategoriaEliminar;
+function setIdCatEliminar(id) { 
+    idCategoriaEliminar=id;
+ }
