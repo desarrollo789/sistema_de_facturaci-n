@@ -220,9 +220,14 @@
         <div id="content" style="margin-top: 120px;">
             <div style="margin-bottom: 70px;">
             <center>
-            	<a href="ListaProductos.php" class="categorias">Todos</a>
+                <?php
+                    include("ConexionBD/obtenerCategoria.php");
+                    $conexion = new consultaCate();
+                    $conexion->DatosCategoria();
+                ?>
+            	<!--<a href="ListaProductos.php" class="categorias">Todos</a>
                 <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>
-                <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>
+                <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>-->
             </center>
             </div>
         </div>

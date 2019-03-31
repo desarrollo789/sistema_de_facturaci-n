@@ -215,9 +215,14 @@
         <div id="content" style="margin-top: 120px;margin-bottom: 70px;">
             <div style="">
             <center>
-                <a href="#" class="categorias">Todos</a>
+               <?php
+                    include("ConexionBD/obtenerCategoria.php");
+                    $conexion = new consultaCate();
+                    $conexion->DatosCategoria();
+                ?>
+                <!--<a href="#" class="categorias">Todos</a>
                 <a href="#" class="categorias">Utiles de Cocina</a>
-                <a href="#" class="categorias">Utiles de Cocina</a>
+                <a href="#" class="categorias">Utiles de Cocina</a>-->
             </center>
             </div>
         </div>
@@ -226,7 +231,12 @@
         <nav>
             <table class="tablaCate">
                 <tr >
-                    <td class="listCate1">
+                   <?php
+                        include("ConexionBD/obtenerProducto.php");
+                        $conexion = new consultaProd();
+                        $conexion->DatosProductos();
+                    ?>
+                    <!--<td class="listCate1">
                         <div class="card mb-3" style="max-width: 540px;">
                           <div class="row no-gutters">
                             <div class="col-md-4">
@@ -278,61 +288,7 @@
                             </div>
                           </div>
                         </div> 
-                    </td>
-
-                    <td class="listCate1">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
-                              <div class="opciones" style="width: 100%;" align="center">
-                                
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Comprar</button>
-
-                              </div>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Lapiz</label></li>
-                                    <li>Color: <label>Verde</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
-
-                    <td class="listCate1">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/lapiceros.jpg" class="card-img">
-                              <div class="opciones" style="width: 100%;" align="center">
-                                
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Comprar</button>
-
-                              </div>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Lapiz</label></li>
-                                    <li>Color: <label>Azul</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
+                    </td>-->
                 </tr>
             </table>
         </nav>
