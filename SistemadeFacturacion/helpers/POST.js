@@ -128,7 +128,6 @@ $(document).on('click', '#ModificarCategoriaConfirm', function() {
     });
 });
 
-
 var idCategoriaEliminar;
 function setIdCatEliminar(id) { 
     idCategoriaEliminar=id;

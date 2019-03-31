@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Administrar Productos</title>
-
+    <!-- favicon.icon -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
@@ -77,9 +78,10 @@
     
      <!-- jQuery -->
      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-     
+    <!-- jQuery CDN - Full version (=with AJAX) -->
+    <script src="Resources\jQuery CDN - Full version (=with AJAX)\jquery3.3.1.js" ></script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
@@ -249,86 +251,7 @@
                         
                     </td>
                 </tr>
-                <tr >
-                    <td class="listCate1">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/cintas.jpg" class="card-img">
-                              <div class="opciones" style="width: 100%;" align="center">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 48%;">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Modificar</button>
-                              </div>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Marcador de agua</label></li>
-                                    <li>Color: <label>Negro</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
-
-                    <td class="listCate1">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/cintas.jpg" class="card-img">
-                              <div class="opciones" style="width: 100%;" align="center">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 48%;">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Modificar</button>
-                              </div>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Marcador de agua</label></li>
-                                    <li>Color: <label>Negro</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
-
-                    <td class="listCate1">
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-4">
-                              <img src="img/cintas.jpg" class="card-img">
-                              <div class="opciones" style="width: 100%;" align="center">
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 48%;">X</button>
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Modificar</button>
-                              </div>
-                            </div>
-                            <div class="col-md-8">
-                              <div class="card-body">
-                                <h5 class="card-title">Lapiceros</h5>
-                                <ul class="list-group list-group-flush">
-                                    <li>Nombre: <label>Marcador de agua</label></li>
-                                    <li>Color: <label>Negro</label></li>
-                                    <li>Marca: <label>Faber Castell</label></li>
-                                    <li>Precio: <label>5</label> Bs</li>
-                                    <li>Stock: <label>50</label></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div> 
-                    </td>
-                    
-
+                <tr id = "productocontenidolist">                                      
                     
                 </tr>
             </table>
@@ -514,15 +437,18 @@
 
 
 
-
+      <!-- jQuery CDN - Full version (=with AJAX) -->
+      <script src="Resources\jQuery CDN - Full version (=with AJAX)\jquery3.3.1.js" ></script>
      <!-- jQuery CDN - Slim version (=without AJAX) -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
      <!-- Popper.JS -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
      <!-- Bootstrap JS -->
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
      <!-- jQuery Custom Scroller CDN -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>        
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>      
+     <!-- post ProductosRescate request -->  
+     <script src="helpers\POST2.js"></script>  
 
 </body>
 
