@@ -199,32 +199,49 @@
                     </button>    
                 </div>
             </nav>
-            <div>
+            <div >
+			<div class="mdl-tabs__tab-bar">
+				<a href="#tabListClient" class="mdl-tabs__tab">Lista De Clientes</a>
+			</div>
 			<div class="mdl-tabs__panel" id="tabListClient">
 				<div class="mdl-grid">
-					<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--6-col-desktop mdl-cell--2-offset-desktop" style="padding-left: 15%;">
+					<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--8-col-desktop mdl-cell--2-offset-desktop">
 						<div class="full-width panel mdl-shadow--2dp">
 							<div class="full-width panel-tittle bg-success text-center tittles">
 								Lista De Clientes
 							</div>
 							<div class="full-width panel-content">
 								<div class="mdl-list">
-								    <?php
-                                        include("ConexionBD/obtenerCliente.php");
-                                        $conexion = new consultaCli();
-                                        $conexion->DatosClientes();
-                                    ?>
-									<!--<div class="mdl-list__item mdl-list__item--two-line">
+									<div class="mdl-list__item mdl-list__item--two-line">
 										<span class="mdl-list__item-primary-content">
 											<i class="zmdi zmdi-account mdl-list__item-avatar"></i>
-											<span style="padding-left: 2%;"><label>1</label><label>.&nbsp</label><label id="nombreCli">Juan Carlos</label>&nbsp<label id="apellidoCli">Trive Mer</label></span>
-											<span class="mdl-list__item-sub-title"><label style="padding-left: 10%;">NIT:&nbsp</label>7849568</span>
+											<span>1. juan Angel</span>
+											<span class="mdl-list__item-sub-title">7849568</span>
 										</span>
+										<a class="mdl-list__item-secondary-action" href="#!"><i class="zmdi zmdi-more"></i></a>
 									</div>
-									<li class="full-width divider-menu-h"></li>-->
-									
+									<li class="full-width divider-menu-h"></li>
+									<div class="mdl-list__item mdl-list__item--two-line">
+										<span class="mdl-list__item-primary-content">
+											<i class="zmdi zmdi-account mdl-list__item-avatar"></i>
+											<span>2. Pedro Alvarez</span>
+											<span class="mdl-list__item-sub-title">78895544</span>
+										</span>
+										<a class="mdl-list__item-secondary-action" href="#!"><i class="zmdi zmdi-more"></i></a>
+									</div>
+									<li class="full-width divider-menu-h"></li>
+									<div class="mdl-list__item mdl-list__item--two-line">
+										<span class="mdl-list__item-primary-content">
+											<i class="zmdi zmdi-account mdl-list__item-avatar"></i>
+											<span>3. Manuel Alvarez</span>
+											<span class="mdl-list__item-sub-title">85542158</span>
+										</span>
+										<a class="mdl-list__item-secondary-action" href="#!"><i class="zmdi zmdi-more"></i></a>
+									</div>
+									<li class="full-width divider-menu-h"></li>
 							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>

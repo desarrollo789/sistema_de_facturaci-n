@@ -243,8 +243,7 @@
                     </td>
 
                     <td class="listCate1">
-                       <a href="Clientes.php">
-                         <div class="card mb-10" id="infoCant">
+                        <div class="card mb-10" id="infoCant">
                           <div class="row no-gutters">
                             <div class="col-md-5">
                               <img src="img/clientes.png" class="card-img" id="infoImg">
@@ -256,8 +255,7 @@
                               </div>
                             </div>
                           </div>
-                         </div> 
-                        </a>
+                        </div> 
                     </td>
 
                     <td class="listCate1">
