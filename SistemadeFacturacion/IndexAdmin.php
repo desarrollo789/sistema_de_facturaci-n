@@ -180,7 +180,7 @@
 
             <br>
             <div class="sidebar-header" style="background-color: #1B9CBB;">
-                <h3>Sistema de Inevtario</h3>
+                <h3>Sistema de Inventario</h3>
             </div>
             <div class="sidebar-header" style="background-color: #1B9CBB;">
                 <?php
