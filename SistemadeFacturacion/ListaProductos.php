@@ -219,11 +219,20 @@
 
         <div id="content" style="margin-top: 120px;margin-bottom: 70px;">
             <div style="">
+<<<<<<< HEAD
             <center id="centercategorias" >
                <?php                    
                     // $conexion->DatosCategoria();                    
+=======
+            <center>
+                <a href="#" class="categorias">Todos</a>
+               <?php
+                    include("ConexionBD/obtenerCategoria.php");
+                    $conexion = new consultaCate();
+                    $conexion->DatosCategoria();
+>>>>>>> f7b9e176596c183df10be69c4fb152fb6949a288
                 ?>
-                <!--<a href="#" class="categorias">Todos</a>
+                <!--
                 <a href="#" class="categorias">Utiles de Cocina</a>
                 <a href="#" class="categorias">Utiles de Cocina</a>-->
             </center>
