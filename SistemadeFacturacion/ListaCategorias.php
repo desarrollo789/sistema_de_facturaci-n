@@ -9,19 +9,19 @@
     <title>Lista de Categorias</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="Resources\Bootstrap CSS CDN\bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">    
 
     <!-- Font Awesome JS -->
-    <script defer src="Resources\Awesome JS\solid.js"></script>
-    <script defer src="Resources\Awesome JS\fontawesome.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
     <!-- Our Custom JS -->
     <script defer src="anim.js"></script>
-    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="stylesheet" href="style2.css">
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="Resources\Scrollbar Custom CSS\jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     
 
     <link rel="stylesheet" type="text/css" href="Estilos/estilo2.css">
@@ -78,15 +78,14 @@
 <body>
     
      <!-- jQuery -->
-     <script src="Resources\jQuery\jquery-1.12.4.min.js"></script>
-     <!-- jQuery CDN - Full version (=with AJAX) -->
-    <script src="Resources\jQuery CDN - Full version (=with AJAX)\jquery3.3.1.js" ></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+     
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
-    <script src="Resources\Popper JS\popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
-    <script src="Resources\Bootstrap JS\bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     
        
 <div class="container">
@@ -107,7 +106,7 @@
             <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
                 <div class="btn-group">
                     <center>
-                        <img src="img\sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                        <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
                     </center>   
                 </div>                                                                       
             </div>
@@ -145,14 +144,14 @@
                 <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">                
                     <div class="btn-group">
                         <center>
-                            <img src="img\sidebar_usuario-corporativo.png" id="icon"alt="User Icon" />
+                            <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon"alt="User Icon" />
                         </center>   
                     </div>                                                                       
                 </div>
                 <!-- Login Form -->
                 <form action="IndexAdmin.php">
-                    <input type="" id="text" class="fadeIn second" name="login" placeholder="Usuario">
-                    <input type="" id="password" class="fadeIn second" name="password" placeholder="password" style="margin-bottom: 30px;">
+                    <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
+                    <input type="password" id="password" class="fadeIn second" name="password" placeholder="password" style="margin-bottom: 30px;">
                         
                     <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
                 </form>
@@ -220,19 +219,6 @@
 
         <div id="content" style="margin-top: 120px;">
             <div style="margin-bottom: 70px;">
-<<<<<<< HEAD
-
-                <center id="CategoriasListarCliente">
-                    <?php
-                        // include("ConexionBD/obtenerCategoria.php");
-                        // $conexion = new consultaCate();
-                        // $conexion->DatosCategoria();
-                    ?>
-                    <!--<a href="ListaProductos.php" class="categorias">Todos</a>
-                    <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>
-                    <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>-->
-                </center>
-=======
             <center>
                <a href="ListaProductos.php" class="categorias">Todos</a>
                 <?php
@@ -244,7 +230,6 @@
                 <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>
                 <a href="ListaProductos.php" class="categorias">Utiles de Cocina</a>-->
             </center>
->>>>>>> f7b9e176596c183df10be69c4fb152fb6949a288
             </div>
         </div>
         
@@ -261,14 +246,14 @@
             <div class="fadeIn first" id = "logo" style="margin-top: 30px;margin-bottom: 30px;">            
                 <div class="btn-group">
                     <center>
-                        <img src="img\sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
+                        <img src="../SistemadeFacturacion/img/sidebar_usuario-corporativo.png" id="icon" alt="User Icon" />
                     </center>   
                 </div>                                                                       
             </div>
             <!-- Login Form -->
             <form action="AdminCategorias.php">
-                <input type="text" id="" class="fadeIn second" name="login" placeholder="Usuario">
-                <input type="text" id="" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
+                <input type="text" id="text" class="fadeIn second" name="login" placeholder="Usuario">
+                <input type="text" id="password" class="fadeIn third" name="password" placeholder="password" style="margin-bottom: 30px;">
                     
                 <input type="submit" class="fadeIn fourth" value="Aceptar" style="width: 80%;">
             </form>
@@ -281,18 +266,15 @@
 
 
 
-    <!-- jQuery CDN - Full version (=with AJAX) -->
-    <script src="Resources\jQuery CDN - Full version (=with AJAX)\jquery3.3.1.js" ></script>
+
      <!-- jQuery CDN - Slim version (=without AJAX) -->
-     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <!-- Popper.JS -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
      <!-- Bootstrap JS -->
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
      <!-- jQuery Custom Scroller CDN -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-     <!-- post ProductosRescate request -->  
-     <script src="helpers\listarcategoriascliente.js"></script>    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>        
 
 </body>
 
