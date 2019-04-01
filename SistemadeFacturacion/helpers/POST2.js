@@ -21,7 +21,7 @@ $(document).ready(function () {
                     </tr>
                 `;
                 productos.forEach(function(element) {      
-                    setIdCatEliminar(element.Id_categoria);  
+                    setIdCatNombre(element.Id_categoria);  
                     setnombreCategoria();                               
                     resp+= `                    
                         <td class="listCate1">
@@ -30,8 +30,8 @@ $(document).ready(function () {
                                 <div class="col-md-4">
                                 <img src="${element.Imagen}" class="card-img">
                                 <div class="opciones" style="width: 100%;" align="center">
-                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 48%;">X</button>
-                                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;">Modificar</button>
+                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 48%;" onclick="setIdCatEliminar(${element.Id})">X</button>
+                                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%;" onclick="setIdCatEliminar(${element.Id})">Modificar</button>
                                 </div>
                                 </div>
                                 <div class="col-md-8">
@@ -56,14 +56,82 @@ $(document).ready(function () {
         }
     });
 });
+$(document).on('click', '#ModificarProductoConfirm', function() {
+    var id = idCategoriaEliminar;
+    var nombre = $('#NuevoNombreProducto').val();
+    var marka = $('#NuevoMarkaProducto').val();
+    var id_categoria = $('#NuevoCategoriaProducto').val();
+    var color = $('#NuevoColorProducto').val();
+    var stock = $('#NuevoStockProducto').val();
+    var longitud = $('#NuevoLongitudProducto').val();
+    var precio = $('#NuevoPrecioProducto').val();
+    // var imagen = "hola";
+    // var imagen = document.getElementById("#NuevoImagenProducto");
+    var imagen = $('#NuevoImagenProducto')[0].files[0].name;
+    // var imagen = $_FILES[document.getElementById("#NuevoImagenProducto")];
+    $.ajax({
+        type: "POST",
+        url: "helpers/modificarProducto.php",
+        data: {            
+            id: id,
+            nombre: nombre,
+            marka: marka,
+            id_categoria: id_categoria,
+            color: color,
+            stock: stock,
+            longitud: longitud,
+            precio: precio,
+            imagen: imagen                      
+        },
+        success: function(response){                                      
+            if(response == 1) {
+                $('#AJAXresponse').html('<div class="alert alert-success" role="alert">Modificado con exito</div>');
+                window.setTimeout( function(){
+                    location.reload();
+                }, 3000);                         
+            } else {
+                $('#AJAXresponse').html('<div class="alert alert-danger" role="alert">Error: '+response+'</div>');
+            } 
+        }
+     
+    });
+});
+
+$(document).on('click', '#EliminarProductoConfirm', function() {
+    var id = idCategoriaEliminar;
+    $.ajax({
+        type: "POST",
+        url: "helpers/eliminarProducto.php",
+        data: {
+            id: id                        
+        },
+        success: function(response){                                      
+            if(response == 1) {
+                $('#AJAXresponse').html('<div class="alert alert-success" role="alert">Eliminado con exito</div>');                
+            } else {
+                $('#AJAXresponse').html('<div class="alert alert-danger" role="alert">Error: '+response+'</div>');
+            } 
+        }
+    }).done(function(){
+        window.setTimeout( function(){
+            location.reload();
+        }, 3000); 
+    });
+});
+
+
 var idCategoriaEliminar;
 function setIdCatEliminar(id) { 
     idCategoriaEliminar=id;
  }
 
+ var idCategoriaNombre;
+function setIdCatNombre(id) { 
+    idCategoriaNombre=id;
+ }
 var NombreCategoria;
 function setnombreCategoria() { 
-    var id = idCategoriaEliminar;
+    var id = idCategoriaNombre;
     var tabla = 'categoria';
     $.ajax({
         type: "POST",

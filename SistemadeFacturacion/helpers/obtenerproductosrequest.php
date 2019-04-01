@@ -11,7 +11,7 @@
         $db = new Conexion();
         $db->charset();
 
-        $obtenerInfo = $db->query("SELECT p.*, c.Nombre as NombreCategoria FROM producto p, categoria c order by id asc");
+        $obtenerInfo = $db->query("SELECT p.*, c.Nombre as NombreCategoria FROM producto p, categoria c WHERE p.Id_categoria = c.Id order by p.Id asc");
         if($db->rows($obtenerInfo) > 0) {
 
             $resProducto = $db->fetchAll($obtenerInfo);

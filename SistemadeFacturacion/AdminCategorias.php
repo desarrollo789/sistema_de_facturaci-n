@@ -315,13 +315,13 @@
               <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese un Nombre" style="text-align: left; width: 100%;">
+                        <input type="text" class="form-control" id="CrearNombreCategoria" placeholder="Ingrese un Nombre" style="text-align: left; width: 100%;">
                     </div>
                 </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" id="btnAgregarCate">Guardar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="AgregarCategoriaConfirm">Guardar</button>
               </div>
             </div>
           </div>

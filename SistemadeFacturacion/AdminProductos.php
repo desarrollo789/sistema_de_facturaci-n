@@ -345,7 +345,7 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Modificar Producto</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modificar Producto</h5>                             
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -353,40 +353,48 @@
               <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="exampleFormControlFile1">Seleccione una iamgen</label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <div id="AJAXresponse"> aqui estoy </div>
+                    </div>   
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Seleccione una imagen</label>
+                        <input type="file" class="form-control-file" id="NuevoImagenProducto">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre del Producto" style="text-align: left; width: 100%;">
+                        <input type="text" class="form-control" id="NuevoNombreProducto" placeholder="Nombre del Producto" style="text-align: left; width: 100%;">
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Marca" style="text-align: left; width: 100%;">
+                    <div class="row">
+                      <div class="col">
+                          <input type="text" class="form-control" id="NuevoMarkaProducto" placeholder="Marca" style="text-align: left; width: 100%;">
+                      </div>
+                      <div class="col">
+                          <input type="text" class="form-control" id="NuevoCategoriaProducto" placeholder="Categoria" style="text-align: left; width: 100%;">
+                      </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                         <input type="text" class="form-control" placeholder="Color" style="text-align: left; width: 100%;">
+                         <input type="text" class="form-control" id="NuevoColorProducto" placeholder="Color" style="text-align: left; width: 100%;">
                         </div>
                         <div class="col">
-                         <label for="exampleInputStock">Stock</label>
-                         <input type="number" class="form-control" placeholder="Stock" style="text-align: left; width: 100%;" min="0">
+                         <!-- <label for="exampleInputStock">Stock</label> -->
+                         <input type="number" class="form-control" id="NuevoStockProducto" placeholder="Stock" style="text-align: left; width: 100%;" min="0">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                         <label for="exampleInputPrecio">Precio</label>
-                         <input type="number" class="form-control" placeholder="Precio" style="text-align: left; width: 100%;" min="0">
+                         <!-- <label for="exampleInputPrecio">Precio</label> -->
+                         <input type="number" class="form-control" id="NuevoPrecioProducto" placeholder="Precio" style="text-align: left; width: 100%;" min="0">
                         </div>
                         <div class="col">
-                         <label for="exampleInputLongitud">Longitud</label>
-                         <input type="number" class="form-control" placeholder="Logitud" style="text-align: left; width: 100%;" min="0">
+                         <!-- <label for="exampleInputLongitud">Longitud</label> -->
+                         <input type="number" class="form-control" id="NuevoLongitudProducto" placeholder="Logitud" style="text-align: left; width: 100%;" min="0">
                         </div>
                     </div>
                 </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
+                <button id="ModificarProductoConfirm" type="button" class="btn btn-primary">Guardar</button>
               </div>
             </div>
           </div>
@@ -408,7 +416,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary"data-dismiss="modal" data-toggle="modal" data-target="#confirmarElimProduc">Aceptar</button>
+                <button id="EliminarProductoConfirm" type="button" class="btn btn-primary"data-dismiss="modal" data-toggle="modal" data-target="#confirmarElimProduc">Aceptar</button>
               </div>
             </div>
           </div>
@@ -449,6 +457,10 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>      
      <!-- post ProductosRescate request -->  
      <script src="helpers\POST2.js"></script>  
+
+     <script>
+
+     </script>
 
 </body>
 

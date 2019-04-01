@@ -128,6 +128,29 @@ $(document).on('click', '#ModificarCategoriaConfirm', function() {
     });
 });
 
+$(document).on('click', '#AgregarCategoriaConfirm', function() {    
+    var nombre = $('#CrearNombreCategoria').val();
+    $.ajax({
+        type: "POST",
+        url: "helpers/añadirCategoria.php",
+        data: {
+            nombre: nombre                      
+        },
+        success: function(response){                                      
+            if(response == 1) {
+                $('#AJAXresponse').html('<div class="alert alert-success" role="alert">Añadido con exito</div>');                
+            } else {
+                $('#AJAXresponse').html('<div class="alert alert-danger" role="alert">Error: '+response+'</div>');
+            } 
+        }
+    }).done(function(){
+        window.setTimeout( function(){
+            location.reload();
+        }, 3000); 
+    });
+});
+
+
 var idCategoriaEliminar;
 function setIdCatEliminar(id) { 
     idCategoriaEliminar=id;
