@@ -120,6 +120,8 @@ $(document).on('click', '#EliminarProductoConfirm', function() {
 });
 
 
+
+
 var idCategoriaEliminar;
 function setIdCatEliminar(id) { 
     idCategoriaEliminar=id;
