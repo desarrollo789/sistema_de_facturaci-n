@@ -11,7 +11,7 @@ class consultaCli{
             echo"    <div class='mdl-list__item mdl-list__item--two-line'>";
 		    echo"    <span class='mdl-list__item-primary-content'>";
             echo"        <i class='zmdi zmdi-account mdl-list__item-avatar'></i>";
-			echo"        <span style='padding-left: 2%;'><label>".$cont."</label><label>.&nbsp</label><label id='nombreCli'>".$datos['Nombre']."</label>&nbsp<label id='apellidoCli'>".$datos['Apellidos']."</label></span>";
+			echo"        <span style='padding-left: 2%;'><label>".$cont."</label><label>.&nbsp</label><label id='nombreCli'>".$datos['Apellidos']."</label>&nbsp<label id='apellidoCli'>".$datos['Nombre']."</label></span>";
             echo"          <span class='mdl-list__item-sub-title'><label style='padding-left: 10%;'>NIT:&nbsp</label>".$datos['Nit']."</span>";
 		    echo"       \</span>";
 	        echo"       </div>";
