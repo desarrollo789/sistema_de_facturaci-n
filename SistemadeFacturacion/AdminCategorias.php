@@ -314,6 +314,7 @@
               </div>
               <div class="modal-body">
                 <form>
+                    <div id="AJAXresponse"> aqui estoy </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="CrearNombreCategoria" placeholder="Ingrese un Nombre" style="text-align: left; width: 100%;">
                     </div>

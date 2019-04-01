@@ -159,16 +159,7 @@
 
             <br>
             <div class="sidebar-header" style="background-color: #1B9CBB;">
-                <h3>Sistema de Inevtario</h3>
-            </div>
-            <div class="sidebar-header" style="background-color: #1B9CBB;">
-
-                <label id="nombre">Brandon Kevin</label> <br>
-                <label id="apellidoPat">Triveño</label>
-                <label id="apellidoMat">Mercado</label><br>
-                <button type="button" class="btn botonP" data-toggle="modal" data-target="#miPerfil">Editar Perfil</button>
-
-            </div>
+                <h3>Sistema de Inventario</h3>
             
 
             <ul class="list-unstyled components" style="background-color: #1B9CBB;">

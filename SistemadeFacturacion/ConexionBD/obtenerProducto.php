@@ -16,7 +16,7 @@ class consultaProd{
         echo"              <img src='img/lapiceros.jpg' class='card-img'>";
         echo"              <div class='opciones' style='width: 100%;' align='center'>";
 
-        echo"                <button type='button' class='btn btn-dark' data-toggle='modal' data-target='#modificarCategoria' style='width: 100%; margin-top: -33%;'>Comprar</button>";
+        echo"                <button type='button' class='btn btn-dark' data-toggle='modal' data-target='#modificarCategoria' style='width: 100%; margin-top: -33%;'>Agragar a Carrito</button>";
 
         echo"              </div>";
         echo"            </div>";
