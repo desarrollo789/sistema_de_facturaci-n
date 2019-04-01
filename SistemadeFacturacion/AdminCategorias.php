@@ -314,7 +314,7 @@
               </div>
               <div class="modal-body">
                 <form>
-                    <div id="AJAXresponse"> aqui estoy </div>
+                    <div id="AJAXresponse"> </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="CrearNombreCategoria" placeholder="Ingrese un Nombre" style="text-align: left; width: 100%;">
                     </div>
@@ -340,7 +340,7 @@
               </div>
               <div class="modal-body">
                 <form>
-                    <div id="AJAXresponse"> aqui estoy </div>                    
+                    <div id="AJAXresponse"> </div>                    
                     <div class="form-group">
                         <input type="text" class="form-control" id="NuevoNombreCategoria" placeholder="Ingrese otro Nombre" style="text-align: left; width: 100%;">
                     </div>
@@ -365,7 +365,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div id="AJAXresponse"> aqui estoy </div>
+              <div id="AJAXresponse"> </div>
               <div class="modal-body">
                 <p>Esta seguro que desea eliminar esta categoria?. Tambien se borraran todos los productos que este contenga.</p>
               </div>
