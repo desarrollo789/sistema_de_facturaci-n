@@ -1,18 +1,18 @@
 <?php
-  session_start();
+  session_start();  
 ?>
 <!DOCTYPE html >
 <html id = AdminCategorias.php>
-<var id = AdminCategorias.php></var>
+<!-- codigo experno al script absolute arruina el favicin ico solve -->
+<!-- <var id = AdminCategorias.php></var> -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>Administrar Categorias</title>
-
-     <!-- favicon.icon -->
-     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <!-- favicon.icon -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="Resources\Bootstrap CSS CDN\bootstrap.min.css">
     <!-- Our Custom CSS -->

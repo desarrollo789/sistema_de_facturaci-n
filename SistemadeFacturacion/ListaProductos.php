@@ -11,7 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Lista de Productos</title>
-
+    <!-- favicon.icon -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="Resources\Bootstrap CSS CDN\bootstrap.min.css">
     <!-- Our Custom CSS -->

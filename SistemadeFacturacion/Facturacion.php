@@ -2,7 +2,9 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{clip:rect(0,auto,auto,0);-ms-zoom:1.0001;}.ng-animate-active{clip:rect(-1px,auto,auto,0);-ms-zoom:1;}</style>
          
         
-    <title>Bootply snippet - factura</title>
+    <title>Factura Inteface Panel</title>
+    <!-- favicon.icon -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <meta name="generator" content="Bootply">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="factura">
@@ -15,7 +17,7 @@
         }
 
         </style>
-    <script id="_carbonads_projs" type="text/javascript" src="./Bootply snippet - factura_files/CKYIKKJW.json"></script></head>
+    <!-- <script id="_carbonads_projs" type="text/javascript" src="./Bootply snippet - factura_files/CKYIKKJW.json"></script></head> -->
     
     <!-- HTML code from Bootply.com editor -->
     
@@ -116,16 +118,9 @@
     </div>
 </div>    
 <!-- container -->                    
-        <!-- JavaScript jQuery code from Bootply.com editor  -->
-        <script type="text/javascript">
-        
-        $(document).ready(function() {
-
-        });
-        
-        </script>        
-        <script src = "../SistemadeFacturacion/factura anim.js"></script>                
-        <link href = "../SistemadeFacturacion/factura style.css">
+        <!-- JavaScript jQuery code from Bootply.com editor  -->               
+        <script src = "factura anim.js"></script>                
+        <link href = "factura style.css">
         <!-- <div class="ad collapse in">
           <button class="ad-btn-hide" data-toggle="collapse" data-target=".ad">×</button>
           <script async="" type="text/javascript" src="./Bootply snippet - factura_files/carbon.js.download" id="_carbonads_js"></script>
