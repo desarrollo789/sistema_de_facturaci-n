@@ -37,7 +37,7 @@ $(document).ready(function () {
                             </td>                    
                             <td style="padding: 35px 80px;">
                                 
-                                <a class="btn btn-success" href="AdminProductos.php" role="button" style="width: 100%;" onclick="setIdCatEliminar(${element.Id})">Ver Productos</a>
+                                <a class="btn btn-success" href="ListaProductos.php" role="button" style="width: 100%;" onclick="setIdCatEliminar(${element.Id})">Ver Productos</a>
                             </td>
                         </tr>
                     `;

@@ -312,7 +312,7 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel">Administrar<label>Ventas</label></h5>
-                                <h5 class="card-title" id="infoLabel">Total: <label>90</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label></label></h5>
                               </div>
                             </div>
                           </div>
@@ -329,7 +329,11 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel">Administrar<label>Usuarios</label></h5>
-                                <h5 class="card-title" id="infoLabel">Total: <label>4</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label><?php
+                                    										     include("ConexionBD/contarUsuario.php");
+                                    										     $conexion = new consultaContarUser();
+                                    										     $conexion->DatosContarUser();
+                                    										 ?></label></h5>
                               </div>
                             </div>
                           </div>
