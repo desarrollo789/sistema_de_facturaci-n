@@ -274,7 +274,7 @@
                                         <tbody>
                                             <tr>
                                                 <td class="">001</td>
-                                                <td class="">Doe moe</td>
+                                                <td class="">Cintas</td>
                                                 <td class="">12.00</td>
                                                 <td class="">100.00</td>
                                                 <td class="">Reducido 7%</td>
@@ -282,11 +282,11 @@
                                             </tr>
                                             <tr>
                                                 <td class="">002</td>
-                                                <td class="">Doe moe TURURU</td>
-                                                <td class="">10.00</td>
-                                                <td class="">1000.00</td>
-                                                <td class="">Normal 18%</td>
-                                                <td class="">10000.00</td>
+                                                <td class="">Bordados</td>
+                                                <td class=""></td>
+                                                <td class="">2</td>
+                                                <td class="">15</td>
+                                                <td class="">30</td>
                                             </tr>
                                         </tbody>
                                     </table>
