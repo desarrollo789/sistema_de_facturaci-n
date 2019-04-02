@@ -1,25 +1,24 @@
 <?php
     include("conexion.php");
 	
-	$ci = $_POST["NitClient"];
-	$nombre = $_POST["NombreClient"];
-	$apellido = $_POST["ApellidoClient"];
-	$user = $_POST["NitClient"]
-	$passsword = $_POST["NitClient"]
-	$admin = $_POST["NitClient"]
+	$ci = $_POST["ciUser"];
+	$nombre = $_POST["nombreUser"];
+	$apellido = $_POST["apellidoUser"];
+	$user = $_POST["usuarioUser"];
+	$passsword = $_POST["passwordUser"];
+	$permiso = $_POST["permisoUser"];
 	
 
-	$agregarCli = "INSERT INTO cliente (Id, Ci, Nombre, Apellidos, Usuario, Password, Admin) VALUES ('$nit', '$nombre', '$apellido')";
-	$consultaCli = mysqli_query($conexion,$agregarCli);
-	if(!$consultaCli){
+	$agregarUser = "INSERT INTO administrador (Ci, Nombre, Apellidos, Usuario, Password, Admin) VALUES ('$ci', '$nombre', '$apellido','$user','$passsword','$permiso')";
+	$consultaUser = mysqli_query($conexion,$agregarUser);
+	if(!$consultaUser){
 		echo '<script>
-				alert("Error al agregar Cliente");
+				alert("Error al agregar Usuario");
 				window.history.go(-1);
 				</script>';
 	}else{
-		header("location:../AdminCliente.php");
+		header("location:../AdminUsuario.php");
 		
 	}
 	mysqli_close($conexion);
 ?>
-INSERT INTO `administrador` (`Id`, `Ci`, `Nombre`, `Apellidos`, `Usuario`, `Password`, `Admin`) VALUES (NULL, '13002558', 'Lucas Marco', 'Rodrigues Smit', 'Luma', 'Luma001', '1');

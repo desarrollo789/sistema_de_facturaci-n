@@ -212,35 +212,35 @@
 								Nuevo Usuario
 							</div>
 							<div class="full-width panel-content">
-								<form>
+								<form method="post" action="ConexionBD/agregarUsuario.php">
 									<h5 class="text-condensedLight">Datos del Usuario </h5>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
+										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="nombreUser" name="nombreUser">
 										<label class="mdl-textfield__label" for="NameClient">NOMBRE</label>
 										<span class="mdl-textfield__error">Nombre Invalido</span>
 									</div>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input class="mdl-textfield__input" type="number" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
-										<label class="mdl-textfield__label" for="NameClient">CI</label>
-										<span class="mdl-textfield__error">CI Invalido</span>
-									</div>
-									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
+										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="apellidoUser" name="apellidoUser">
 										<label class="mdl-textfield__label" for="NameClient">APELLIDO</label>
 										<span class="mdl-textfield__error">Apellido Invalido</span>
 									</div>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
+										<input class="mdl-textfield__input" type="number" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="ciUser" name="ciUser">
+										<label class="mdl-textfield__label" for="NameClient">CI</label>
+										<span class="mdl-textfield__error">CI Invalido</span>
+									</div>
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="usuarioUser" name="usuarioUser">
 										<label class="mdl-textfield__label" for="NameClient">NOMBRE USUARIO</label>
 										<span class="mdl-textfield__error">Usuario Invalido</span>
 									</div>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
+										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="passwordUser" name="passwordUser">
 										<label class="mdl-textfield__label" for="NameClient">PASSWORD</label>
 										<span class="mdl-textfield__error">Password Invalido</span>
 									</div>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input class="mdl-textfield__input" type="number" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient" max="1" min="0">
+										<input class="mdl-textfield__input" type="number" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="permisoUser" name="permisoUser" max="1" min="0">
 										<label class="mdl-textfield__label" for="NameClient">PERMISOS DE ADMINISTRADOR</label>
 										<span class="mdl-textfield__error">Permiso Invalido</span>
 									</div>
@@ -265,26 +265,25 @@
 							</div>
 							<div class="full-width panel-content">
 								<div class="mdl-list">
-									<div class="mdl-list__item mdl-list__item--five-line">
+									<?php
+                                        include("ConexionBD/obtenerUsuario.php");
+                                        $conexion = new consultaUser();
+                                        $conexion->DatosUsuario();
+                                    ?>
+									<!--<div class="mdl-list__item mdl-list__item--five-line">
 										<span class="mdl-list__item-primary-content">
 											<i class="zmdi zmdi-account mdl-list__item-avatar"></i>
 											<span style="padding-left: 2%;"><label>1</label><label>.&nbsp</label><label id="nombreCli">esteban leopoldo</label>&nbsp<label id="apellidoCli" style="padding-left: 20px;">Trivelo Mercado</label></span>
-											
-											
-											
 											<span style="padding-left: 2%;"><strong><label id="nombreCli" style="border-bottom: solid 1px;">Nombre Usuario</label></strong>&nbsp<label id="apellidoCli">Marco</label></span>
-											
 											<span style="padding-left: 2%;"><strong><label id="nombreCli" style="border-bottom: solid 1px;">Password</label></strong>&nbsp<label id="apellidoCli">Trimer001</label></span>
-											
 											<span style="padding-left: 2%; padding-right: 5%;"><strong><label id="nombreCli" style="border-bottom: solid 1px;">CI</label></strong>&nbsp<label id="apellidoCli">13002525</label></span>
-											
 										</span>
                                         <td>
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 15%;">Eliminar</button>
                                             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modificarCategoria" style="width: 15%;">Modificar</button>
                                         </td>
                                  	</div>
-									<li class="full-width divider-menu-h"></li>
+									<li class="full-width divider-menu-h"></li>-->
 							</div>
 						</div>
 						
