@@ -320,6 +320,7 @@
                     </td>
 
                     <td class="listCate1">
+                       <a href="AdminUsuario.php">
                         <div class="card mb-10" id="infoCant">
                           <div class="row no-gutters">
                             <div class="col-md-5">
@@ -332,7 +333,8 @@
                               </div>
                             </div>
                           </div>
-                        </div> 
+                        </div>
+                       </a>
                     </td>
                 </tr>
             </table>
