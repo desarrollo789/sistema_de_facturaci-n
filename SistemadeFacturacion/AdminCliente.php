@@ -166,7 +166,7 @@
 
             <ul class="list-unstyled components" style="background-color: #1B9CBB;">
                 <li>
-                    <a href="Index.php">
+                    <a href="IndexAdmin.php">
                         <i class="fas fa-home"></i>
                         Inicio
                     </a>

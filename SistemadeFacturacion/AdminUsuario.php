@@ -166,17 +166,12 @@
 
             <ul class="list-unstyled components" style="background-color: #1B9CBB;">
                 <li>
-                    <a href="Index.php">
+                    <a href="IndexAdmin.php">
                         <i class="fas fa-home"></i>
                         Inicio
                     </a>
                 </li>
                 <li>
-                    <a href="index2.php" data-toggle="modal" data-target="#LoginAdmin">
-                        <i class="fas fa-briefcase"></i>
-                        Administrar
-                    </a>
-                </li>
                 <li>
                     <a href="index2.php" data-toggle="modal" data-target="#LoginAdmin">
                         <i class="fas fa-briefcase"></i>
