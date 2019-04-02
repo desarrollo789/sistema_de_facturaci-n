@@ -206,7 +206,7 @@
 			</div>
 			<div class="mdl-tabs__panel is-active" id="tabNewClient">
 				<div class="mdl-grid">
-					<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--8-col-desktop mdl-cell--2-offset-desktop">
+					<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--6-col-desktop mdl-cell--2-offset-desktop" style="padding-left: 15%;">
 						<div class="full-width panel mdl-shadow--2dp">
 							<div class="full-width panel-tittle bg-primary text-center tittles">
 								Nuevo Usuario
@@ -215,21 +215,31 @@
 								<form>
 									<h5 class="text-condensedLight">Datos del Usuario </h5>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="DNIClient">
-										<label class="mdl-textfield__label" for="DNIClient">nombre de usuario</label>
-										<span class="mdl-textfield__error">invalido solo numeros</span>
+										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
+										<label class="mdl-textfield__label" for="NameClient">NOMBRE</label>
+										<span class="mdl-textfield__error">Nombre Invalido</span>
 									</div>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
-										<label class="mdl-textfield__label" for="NameClient">NOMBRE COMPLETO</label>
+										<label class="mdl-textfield__label" for="NameClient">APELLIDO</label>
 										<span class="mdl-textfield__error">Nombre Invalido</span>
 									</div>
-									<p class="text-center">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
+										<label class="mdl-textfield__label" for="NameClient">NOMBRE USUARIO</label>
+										<span class="mdl-textfield__error">Nombre Invalido</span>
+									</div>
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class="mdl-textfield__input" type="text" pattern="-?[A-Za-záéíóúÁÉÍÓÚ ]*(\.[0-9]+)?" id="NameClient">
+										<label class="mdl-textfield__label" for="NameClient">PASSWORD</label>
+										<span class="mdl-textfield__error">Nombre Invalido</span>
+									</div>
+									<div class="text-center">
 										<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored bg-primary" id="btn-addClient">
 											<i class="zmdi zmdi-plus"></i>
 										</button>
 										<div class="mdl-tooltip" for="btn-addClient">Agregar Usuario</div>
-									</p>
+									</div>
 								</form>
 							</div>
 						</div>
@@ -245,58 +255,20 @@
 							</div>
 							<div class="full-width panel-content">
 								<div class="mdl-list">
-									<div class="mdl-list__item mdl-list__item--two-line">
+									<div class="mdl-list__item mdl-list__item--for-line">
 										<span class="mdl-list__item-primary-content">
 											<i class="zmdi zmdi-account mdl-list__item-avatar"></i>
-											<span>1. juan Angel</span>
-											<span class="mdl-list__item-sub-title">7849568</span>
-                                        </span>
-                                        <td style="padding: 35px 80px;">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 10%;">Eliminar</button>
-                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modificarCategoria" style="width: 10%;">Modificar</button>
-                                        </td>
-
-                                 </div>
-									<li class="full-width divider-menu-h"></li>
-									<div class="mdl-list__item mdl-list__item--two-line">
-										<span class="mdl-list__item-primary-content">
-											<i class="zmdi zmdi-account mdl-list__item-avatar"></i>
-											<span>2. Pedro Alvarez</span>
-											<span class="mdl-list__item-sub-title">78895544</span>
+											<span style="padding-left: 2%;"><label>1</label><label>.&nbsp</label><label id="nombreCli">esteban leopoldo</label>&nbsp<label id="apellidoCli" style="padding-left: 20px;">Trivelo Mercado</label></span>
+											
+											<span style="padding-left: 2%;"><strong><label id="nombreCli" style="border-bottom: solid 1px;">Nombre Usuario</label></strong>&nbsp<label id="apellidoCli">Marco</label></span>
+											
+											<span style="padding-left: 2%;"><strong><label id="nombreCli" style="border-bottom: solid 1px;">Password</label></strong>&nbsp<label id="apellidoCli">Trimer001</label></span>
 										</span>
-                                        <td style="padding: 35px 80px;">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 10%;">Eliminar</button>
-                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modificarCategoria" style="width: 10%;">Modificar</button>
+                                        <td>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 15%;">Eliminar</button>
+                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modificarCategoria" style="width: 15%;">Modificar</button>
                                         </td>
-
-									</div>
-									<li class="full-width divider-menu-h"></li>
-									<div class="mdl-list__item mdl-list__item--two-line">
-										<span class="mdl-list__item-primary-content">
-											<i class="zmdi zmdi-account mdl-list__item-avatar"></i>
-											<span>3. Manuel Alvarez</span>
-											<span class="mdl-list__item-sub-title">85542158</span>
-										</span>
-                                        <td style="padding: 35px 80px;">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 10%;">Eliminar</button>
-                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modificarCategoria" style="width: 10%;">Modificar</button>
-                                        </td>
-
-									</div>
-                                    <li class="full-width divider-menu-h"></li>
-                                    <li class="full-width divider-menu-h"></li>
-									<div class="mdl-list__item mdl-list__item--two-line">
-										<span class="mdl-list__item-primary-content">
-											<i class="zmdi zmdi-account mdl-list__item-avatar"></i>
-											<span>3. Pedro Fernandez</span>
-											<span class="mdl-list__item-sub-title">85542158</span>
-										</span>
-                                        <td style="padding: 35px 80px;">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmarEliminacion" style="width: 10%;">Eliminar</button>
-                                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modificarCategoria" style="width: 10%;">Modificar</button>
-                                        </td>
-
-									</div>
+                                 	</div>
 									<li class="full-width divider-menu-h"></li>
 							</div>
 						</div>
