@@ -17,7 +17,7 @@
 	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
 	<script src="js/material.min.js" ></script>
 	<script src="js/sweetalert2.min.js" ></script>
-	<script src="js/jquery.mCustomScrollbar.concat.min.js" ></script>
+	<!--<script src="js/jquery.mCustomScrollbar.concat.min.js" ></script>-->
 	<script src="js/main.js" ></script>
 
     <!-- Bootstrap CSS CDN -->
@@ -156,9 +156,9 @@
             </div>
             <div class="sidebar-header" style="background-color: #1B9CBB;">
 
-                <label id="nombre">Brandon Kevin</label> <br>
-                <label id="apellidoPat">Triveño</label>
-                <label id="apellidoMat">Mercado</label><br>
+                <label id="nombre">Brandon</label> <br>
+                <label id="apellidoPat">Trimer</label>
+                <label id="apellidoMat"></label><br>
                 <button type="button" class="btn botonP" data-toggle="modal" data-target="#miPerfil">Editar Perfil</button>
 
             </div>
@@ -169,18 +169,6 @@
                     <a href="Index.php">
                         <i class="fas fa-home"></i>
                         Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="index2.php" data-toggle="modal" data-target="#LoginAdmin">
-                        <i class="fas fa-briefcase"></i>
-                        Administrar
-                    </a>
-                </li>
-                <li>
-                    <a href="index2.php" data-toggle="modal" data-target="#LoginAdmin">
-                        <i class="fas fa-briefcase"></i>
-                        Contactanos
                     </a>
                 </li>
             </ul>

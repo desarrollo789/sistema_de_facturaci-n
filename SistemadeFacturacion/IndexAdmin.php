@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Control de Inventario</title>
+    <title>administrador</title>
 
      <!-- favicon.icon -->
      <link rel="icon" href="data:;base64,iVBORw0KGgo=">
@@ -282,6 +282,7 @@
                     </td>
 
                     <td class="listCate1">
+                    <a href="AdminCliente.php">
                         <div class="card mb-10" id="infoCant">
                           <div class="row no-gutters">
                             <div class="col-md-5">
@@ -298,7 +299,8 @@
                               </div>
                             </div>
                           </div>
-                        </div> 
+                        </div>
+                    </a> 
                     </td>
 
                     <td class="listCate1">
@@ -318,6 +320,7 @@
                     </td>
 
                     <td class="listCate1">
+                       <a href="AdminUsuario.php">
                         <div class="card mb-10" id="infoCant">
                           <div class="row no-gutters">
                             <div class="col-md-5">
@@ -330,7 +333,8 @@
                               </div>
                             </div>
                           </div>
-                        </div> 
+                        </div>
+                       </a>
                     </td>
                 </tr>
             </table>
