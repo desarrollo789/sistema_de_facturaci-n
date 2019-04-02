@@ -2,7 +2,7 @@
 class consultaCli{
     function DatosClientes(){
         include("conexion.php");
-        $datosCli = "SELECT * FROM cliente order by Nombre asc";
+        $datosCli = "SELECT * FROM cliente";
         $resCli = mysqli_query($conexion,$datosCli);
         $cont = 0;
         while($datos = mysqli_fetch_array($resCli))
@@ -19,9 +19,5 @@ class consultaCli{
         }
         mysqli_close($conexion);
         $cont = 0;
-    }
-    
-    
-    
-            
+    }       
 }

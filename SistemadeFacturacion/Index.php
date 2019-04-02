@@ -160,8 +160,7 @@
             <br>
             <div class="sidebar-header" style="background-color: #1B9CBB;">
                 <h3>Sistema de Inventario</h3>
-            
-
+			</div>
             <ul class="list-unstyled components" style="background-color: #1B9CBB;">
                 <li>
                     <a href="Index.php">
