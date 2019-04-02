@@ -206,7 +206,11 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel"><label>Categorias</label></h5>
-                                <h5 class="card-title" id="infoLabel">Total: <label>5</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label><?php
+                                    										     include("ConexionBD/contarCategoria.php");
+                                    										     $conexion = new consultaContarCat();
+                                    										     $conexion->DatosContarCat();
+                                    										 ?></label></h5>
                               </div>
                             </div>
                           </div>
@@ -224,7 +228,11 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel"><label>Productos</label></h5>
-                                <h5 class="card-title" id="infoLabel">Total: <label>25</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label><?php
+                                    										     include("ConexionBD/contarProducto.php");
+                                    										     $conexion = new consultaContarProd();
+                                    										     $conexion->DatosContarProd();
+                                    										 ?></label></h5>
                               </div>
                             </div>
                           </div>
@@ -233,6 +241,7 @@
                     </td>
 
                     <td class="listCate1">
+                       <a href="Clientes.php">
                         <div class="card mb-10" id="infoCant">
                           <div class="row no-gutters">
                             <div class="col-md-5">
@@ -241,11 +250,16 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel"><label>Clientes</label></h5>
-                                <h5 class="card-title" id="infoLabel">Total: <label>50</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label><?php
+                                    										     include("ConexionBD/contarCliente.php");
+                                    										     $conexion = new consultaContarClie();
+                                    										     $conexion->DatosContarClie();
+                                    										 ?></label></h5>
                               </div>
                             </div>
                           </div>
-                        </div> 
+                        </div>
+                       </a>
                     </td>
 
                     <td class="listCate1">
