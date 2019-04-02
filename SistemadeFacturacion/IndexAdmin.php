@@ -176,7 +176,7 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
 
-            <a href="Perfil.php"><img src="img/inventario.png" width="210px" style="padding-left: 30px; padding-top: 30px;"></a>
+            <a href="IndexAdmin.php"><img src="img/inventario.png" width="210px" style="padding-left: 30px; padding-top: 30px;"></a>
 
             <br>
             <div class="sidebar-header" style="background-color: #1B9CBB;">
@@ -247,7 +247,11 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel">Administrar<label>Categorias</label></h5>
-                                <h5 class="card-title" id="infoLabel">Total: <label>5</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label><?php
+                                    										     include("ConexionBD/contarCategoria.php");
+                                    										     $conexion = new consultaContarCat();
+                                    										     $conexion->DatosContarCat();
+                                    										 ?></label></h5>
                               </div>
                             </div>
                           </div>
@@ -265,7 +269,11 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel">Administrar<label>Productos</label></h5>
-                                <h5 class="card-title" id="infoLabel">Total: <label>25</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label><?php
+                                    										     include("ConexionBD/contarProducto.php");
+                                    										     $conexion = new consultaContarProd();
+                                    										     $conexion->DatosContarProd();
+                                    										 ?></label></h5>
                               </div>
                             </div>
                           </div>
@@ -282,7 +290,11 @@
                             <div class="col-md-7" style="padding-top: 40px;">
                               <div class="card-body">
                                 <h5 class="card-title" id="infoLabel">Administrar<label>Clientes</label></h5>
-                                <h5 class="card-title" id="infoLabel">Total: <label>50</label></h5>
+                                <h5 class="card-title" id="infoLabel">Total: <label><?php
+                                    										     include("ConexionBD/contarCliente.php");
+                                    										     $conexion = new consultaContarClie();
+                                    										     $conexion->DatosContarClie();
+                                    										 ?></label></h5>
                               </div>
                             </div>
                           </div>

@@ -148,7 +148,7 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
 
-            <a href="Perfil.php"><img src="img/inventario.png" width="210px" style="padding-left: 30px; padding-top: 30px;"></a>
+           <img src="img/inventario.png" width="210px" style="padding-left: 30px; padding-top: 30px;">
 
             <br>
             <div class="sidebar-header" style="background-color: #1B9CBB;">

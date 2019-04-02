@@ -171,22 +171,12 @@
                 <i class="fas fa-arrow-left"></i>
             </div>
 
-            <a href="Perfil.php"><img src="img/inventario.png" width="210px" style="padding-left: 30px; padding-top: 30px;"></a>
+            <a href="Index.php"><img src="img/inventario.png" width="210px" style="padding-left: 30px; padding-top: 30px;"></a>
 
             <br>
             <div class="sidebar-header" style="background-color: #1B9CBB;">
                 <h3>Sistema de Inevtario</h3>
             </div>
-            <div class="sidebar-header" style="background-color: #1B9CBB;">
-
-                <label id="nombre">Brandon Kevin</label> <br>
-                <label id="apellidoPat">Triveño</label>
-                <label id="apellidoMat">Mercado</label><br>
-                <button type="button" class="btn botonP" data-toggle="modal" data-target="#miPerfil">Editar Perfil</button>
-
-            </div>
-            
-
             <ul class="list-unstyled components" style="background-color: #1B9CBB;">
                 <li>
                     <a href="Index.php">
