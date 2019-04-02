@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -260,7 +260,7 @@
                                 <div class="panel-body">
                                     <h3 class="panel-title">Detalle</h3>
                                 
-                                    <table class="table table-condensed">
+                                    <table class="table table-condensed" id="FacturacionProductos">
                                         <thead>
                                             <tr>
                                                 <th class="">Id</th>

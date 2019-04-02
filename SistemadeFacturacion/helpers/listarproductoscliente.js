@@ -20,7 +20,9 @@ $(document).ready(function () {
                         </td>                         
                     </tr>
                 `;
-                productos.forEach(function(element) {                                                                               
+                productos.forEach(function(element) {                        
+                    // var prodArray = [];
+                    // prodArray = [(element.Id), (element.Nombre), (element.Descripcion), (element.Precio)];                                                                                                                                    
                     resp+= `                    
                         <td class="listCate1">
                             <div class="card mb-3" style="max-width: 540px;">
@@ -28,7 +30,7 @@ $(document).ready(function () {
                                 <div class="col-md-4">
                                     <img src="${element.Imagen}" class="card-img">
                                     <div class="opciones" style="width: 100%;" align="center">                                
-                                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%; margin-top: -33%" align="center"">Comprar</button>                                        
+                                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%; margin-top: -33%" align="center"" onclick="setIdArrayProducto(${element.Id})">Comprar</button>                                        
                                     </div>
                                 </div>
                                 <div class="col-md-8">
@@ -117,7 +119,7 @@ function setIdCatFiltrar(id) {
                                 <div class="col-md-4">
                                     <img src="${element.Imagen}" class="card-img">
                                     <div class="opciones" style="width: 100%;" align="center">                                
-                                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%; margin-top: -33%" align="center"">Comprar</button>                                        
+                                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modificarCategoria" style="width: 48%; margin-top: -33%" align="center"" onclick="setIdArrayProducto(${element})">Comprar</button>                                        
                                     </div>
                                 </div>
                                 <div class="col-md-8">
@@ -166,3 +168,48 @@ function setnombreCategoria() {
         }                                               
     });
 }
+var CarroProductos = [];
+function setIdArrayProducto(element)
+{
+    CarroProductos.push(element);    
+}
+
+
+$(document).on('click', '#IrFactura', function() {
+    var ids = CarroProductos;
+    var resp="";
+    ids.forEach(function(objs) { 
+        $.ajax({
+            type: "POST",
+            url: "helpers/getproductosfacturacion.php",
+            data:{
+                id: objs
+            },                   
+            success: function(response){  
+                                
+                if(response == 0)
+                {
+                    alert("factura error no add reliset");
+                }
+                else{
+                    alert("factura add");
+                    var productos = response.data;  
+                    productos.forEach(function(element) {
+                        resp+=`
+                            <tr>
+                                <td class="">${element.Id}</td>
+                                <td class="">${element.Nombre}</td>
+                                <td class="">${element.Descripcion}</td>
+                                <td class="">1</td>
+                                <td class="">${element.Precio}</td>
+                                <td class="">13%</td>
+                            </tr>
+                        `;
+                    });                    
+                }
+            }
+        });
+    });  
+    $('#FacturacionProductos').html(resp);  
+    window.location.href = "Facturacion.php";    
+});

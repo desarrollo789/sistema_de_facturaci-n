@@ -204,6 +204,10 @@
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
                     </button>
+                    <button type="button" id="IrFactura" class="btn btn-info">
+                        <i class="fas fa-align-right"></i>
+                        <span>Ir a la Factura</span>
+                    </button>
                 </div>
             </nav>
         </div>
