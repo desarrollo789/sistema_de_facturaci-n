@@ -1,11 +1,15 @@
 <?php
     include("conexion.php");
 	
-	$nit = $_POST["NitClient"];
+	$ci = $_POST["NitClient"];
 	$nombre = $_POST["NombreClient"];
 	$apellido = $_POST["ApellidoClient"];
+	$user = $_POST["NitClient"]
+	$passsword = $_POST["NitClient"]
+	$admin = $_POST["NitClient"]
+	
 
-	$agregarCli = "INSERT INTO cliente (Nit, Nombre, Apellidos) VALUES ('$nit', '$nombre', '$apellido')";
+	$agregarCli = "INSERT INTO cliente (Id, Ci, Nombre, Apellidos, Usuario, Password, Admin) VALUES ('$nit', '$nombre', '$apellido')";
 	$consultaCli = mysqli_query($conexion,$agregarCli);
 	if(!$consultaCli){
 		echo '<script>
